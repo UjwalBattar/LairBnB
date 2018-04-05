@@ -35,6 +35,8 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    const loginFooter = "Don't have an account?";
+    const signupFooter = "Already have a LairBnB account?";
     const email = (
       <label>
         Email:
@@ -47,17 +49,6 @@ class SessionForm extends React.Component {
         />
       </label>
     );
-    // const dateOfBirth = (
-    //   <label>
-    //     Email:
-    //     <input
-    //       type="text"
-    //       value={this.state.email}
-    //       onChange={this.update("date_of_birth")}
-    //       className="email-input"
-    //     />
-    //   </label>
-    // );
 
     return (
       <div className={`${this.props.formType}-form-container`}>
@@ -65,7 +56,11 @@ class SessionForm extends React.Component {
           onSubmit={this.props.handleSubmit}
           className={`${this.props.formType}-from-box`}
         >
+          Welcome to B!
+          <br />
+          {this.renderErrors()}
           {this.props.formType}!
+          <br />
           <br />
           <label>
             Username:
@@ -77,7 +72,11 @@ class SessionForm extends React.Component {
               placeholder="Username"
             />
           </label>
+          <br />
+          <br />
           {this.props.formType === "Signup" ? email : null}
+          <br />
+          <br />
           <label>
             Password:
             <input
@@ -88,10 +87,36 @@ class SessionForm extends React.Component {
               placeholder="Password"
             />
           </label>
+          <br />
+          <br />
+          <input
+            className="session-submit"
+            type="submit"
+            value={this.props.formType}
+          />
         </form>
+        <br />
+        <br />
+        <div>
+          {this.props.formType === "Signup" ? signupFooter : loginFooter}&nbsp;&nbsp;&nbsp;{
+            this.props.navLink
+          }
+        </div>
       </div>
     );
   }
 }
 
-export default SessionForm;
+export default withRouter(SessionForm);
+
+// const dateOfBirth = (
+//   <label>
+//     Email:
+//     <input
+//       type="text"
+//       value={this.state.email}
+//       onChange={this.update("date_of_birth")}
+//       className="email-input"
+//     />
+//   </label>
+// );
