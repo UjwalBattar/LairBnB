@@ -53,7 +53,7 @@ class SessionForm extends React.Component {
     return (
       <div className={`${this.props.formType}-form-container`}>
         <form
-          onSubmit={this.props.handleSubmit}
+          onSubmit={this.handleSubmit}
           className={`${this.props.formType}-from-box`}
         >
           Welcome to B!
