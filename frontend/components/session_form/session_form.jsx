@@ -18,10 +18,14 @@ class SessionForm extends React.Component {
       });
   }
 
+  componentWillUnmount() {
+    console.log("works!!");
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then(() => this.props.history.push("/"));
+    this.props.processForm(user).then(this.props.closeModal);
   }
 
   renderErrors() {
@@ -58,6 +62,9 @@ class SessionForm extends React.Component {
         >
           Welcome to B!
           <br />
+          <div onClick={this.props.closeModal} className="close-x">
+            X
+          </div>
           {this.renderErrors()}
           {this.props.formType}!
           <br />

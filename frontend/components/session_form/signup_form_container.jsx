@@ -3,18 +3,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { signup } from "../../actions/session_actions";
 import SessionForm from "./session_form";
+import { openModal, closeModal } from "../../actions/modal_actions";
 
 const mapStateToProps = ({ errors }) => {
   return {
     errors: errors.sessionErrors,
-    formType: "Signup",
-    navLink: <Link to="/login">Log in</Link>
+    formType: "Signup"
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    processForm: user => dispatch(signup(user))
+    processForm: user => dispatch(signup(user)),
+    otherForm: (
+      <button onClick={() => dispatch(openModal("Login"))}>Login</button>
+    ),
+    closeModal: () => dispatch(closeModal())
   };
 };
 

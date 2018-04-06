@@ -8,17 +8,17 @@ class Navbar extends React.Component {
 
   render() {
     const loggedOutLinks = () => (
-      <nav className="login-signup-links">
-        <Link to="/login">Login</Link>
-        &nbsp;&nbsp;or&nbsp;&nbsp;
-        <Link to="/signup">Signup</Link>
+      <nav className="login-signup">
+        <button onClick={() => this.props.openModal("Login")}>Login</button>
+        &nbsp;or&nbsp;
+        <button onClick={() => this.props.openModal("Signup")}>Signup</button>
       </nav>
     );
 
     const loggedInLinks = (currentUser, logout) => (
       <nav className="logout-links">
         <button className="header-button" onClick={logout}>
-          Log Out
+          Logout
         </button>
       </nav>
     );
