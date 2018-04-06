@@ -60,15 +60,11 @@ class SessionForm extends React.Component {
           onSubmit={this.handleSubmit}
           className={`${this.props.formType}-from-box`}
         >
-          Welcome to B!
-          <br />
           <div onClick={this.props.closeModal} className="close-x">
             X
           </div>
           {this.renderErrors()}
           {this.props.formType}!
-          <br />
-          <br />
           <label>
             Username:
             <input
@@ -79,11 +75,7 @@ class SessionForm extends React.Component {
               placeholder="Username"
             />
           </label>
-          <br />
-          <br />
           {this.props.formType === "Signup" ? email : null}
-          <br />
-          <br />
           <label>
             Password:
             <input
@@ -94,19 +86,15 @@ class SessionForm extends React.Component {
               placeholder="Password"
             />
           </label>
-          <br />
-          <br />
           <input
             className="session-submit"
             type="submit"
             value={this.props.formType}
           />
         </form>
-        <br />
-        <br />
         <div>
           {this.props.formType === "Signup" ? signupFooter : loginFooter}&nbsp;&nbsp;&nbsp;{
-            this.props.navLink
+            this.props.otherForm
           }
         </div>
       </div>

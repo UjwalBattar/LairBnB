@@ -11,7 +11,6 @@ class HomePage extends React.Component {
   }
 
   render() {
-    // return <h1>Home!</h1>;
     const allUsers = Object.keys(this.props.users).map(userId => {
       console.log(this.props.users[userId]);
       return <p>User: {this.props.users[userId].username}</p>;

@@ -10,23 +10,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+
  *= require_self
  */
 
-.modal-background {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 10;
-}
+// Base
+@import "base/reset", "base/fonts", "base/colors";
 
-.modal-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// Layout
+@import "layout/navbar", "layout/session_form", "layout/modal";
+
+// Components
+@import "components/signup_form", "components/login_form";

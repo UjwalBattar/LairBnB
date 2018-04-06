@@ -1,0 +1,39 @@
+.navbar {
+  background: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  border-bottom: 1px solid $light-grey;
+  font-family: $sans-serif;
+  font-size: 14px;
+  color: $grey;
+}
+.home-search-container {
+  display: flex;
+  justify-content: space-between;
+}
+.search-container {
+  padding-left: 10px;
+}
+.searchPlaceholder {
+  width: auto;
+  border: 1px solid black;
+}
+.nav-bar-links {
+  cursor: pointer;
+}
+.login-signup-links {
+  justify-content: space-around;
+}
+
+.login-link {
+  padding-right: 35px;
+}
+
+.signup-link {
+  padding-right: 7px;
+}
+
+.logout-link {
+  padding-right: 7px;
+}
