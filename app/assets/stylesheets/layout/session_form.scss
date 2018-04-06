@@ -1,0 +1,27 @@
+.username-input,
+.password-input,
+.email-input {
+  width: auto;
+  border: 1px solid black;
+  width: 100%;
+}
+.close-x {
+  position: relative;
+}
+.input-fields,
+.close-x {
+  margin: 10px;
+  display: block;
+  padding: 4px;
+  size: 50px;
+}
+
+.session-submit {
+  border-radius: 3%;
+  background-color: $pink;
+  width: 100%;
+  padding: auto;
+  text-align: center;
+  color: $white;
+  font-family: $sans-serif;
+}

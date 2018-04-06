@@ -42,8 +42,7 @@ class SessionForm extends React.Component {
     const loginFooter = "Don't have an account?";
     const signupFooter = "Already have a LairBnB account?";
     const email = (
-      <label>
-        Email:
+      <div className="input-fields">
         <input
           type="text"
           value={this.state.email}
@@ -51,7 +50,7 @@ class SessionForm extends React.Component {
           className="email-input"
           placeholder="Email address"
         />
-      </label>
+      </div>
     );
 
     return (
@@ -65,8 +64,7 @@ class SessionForm extends React.Component {
           </div>
           {this.renderErrors()}
           {this.props.formType}!
-          <label>
-            Username:
+          <div className="input-fields">
             <input
               type="text"
               value={this.state.username}
@@ -74,10 +72,9 @@ class SessionForm extends React.Component {
               className="username-input"
               placeholder="Username"
             />
-          </label>
+          </div>
           {this.props.formType === "Signup" ? email : null}
-          <label>
-            Password:
+          <div className="input-fields">
             <input
               type="password"
               value={this.state.password}
@@ -85,7 +82,7 @@ class SessionForm extends React.Component {
               className="password-input"
               placeholder="Password"
             />
-          </label>
+          </div>
           <input
             className="session-submit"
             type="submit"
