@@ -54,45 +54,46 @@ class SessionForm extends React.Component {
     );
 
     return (
-      <div className={`${this.props.formType}-form-container`}>
-        <form
-          onSubmit={this.handleSubmit}
-          className={`${this.props.formType}-from-box`}
-        >
-          <div onClick={this.props.closeModal} className="close-x">
-            X
-          </div>
-          {this.renderErrors()}
-          {this.props.formType}!
-          <div className="input-fields">
+      <div className="session-form">
+        <div onClick={this.props.closeModal} className="close-x">
+          X
+        </div>
+        <div className={`${this.props.formType}-form-container`}>
+          <form
+            onSubmit={this.handleSubmit}
+            className={`${this.props.formType}-from-box`}
+          >
+            {this.renderErrors()}
+            {this.props.formType === "login" ? "Login to continue" : null}
+            <div className="input-fields">
+              <input
+                type="text"
+                value={this.state.username}
+                onChange={this.update("username")}
+                className="username-input"
+                placeholder="Username"
+              />
+            </div>
+            {this.props.formType === "signup" ? email : null}
+            <div className="input-fields">
+              <input
+                type="password"
+                value={this.state.password}
+                onChange={this.update("password")}
+                className="password-input"
+                placeholder="Password"
+              />
+            </div>
             <input
-              type="text"
-              value={this.state.username}
-              onChange={this.update("username")}
-              className="username-input"
-              placeholder="Username"
+              className="session-submit"
+              type="submit"
+              value={this.props.formType}
             />
+          </form>
+          <div className="session-form-footer">
+            {this.props.formType === "signup" ? signupFooter : loginFooter}&nbsp;&nbsp;&nbsp;
+            <div className="other-form-link">{this.props.otherForm}</div>
           </div>
-          {this.props.formType === "Signup" ? email : null}
-          <div className="input-fields">
-            <input
-              type="password"
-              value={this.state.password}
-              onChange={this.update("password")}
-              className="password-input"
-              placeholder="Password"
-            />
-          </div>
-          <input
-            className="session-submit"
-            type="submit"
-            value={this.props.formType}
-          />
-        </form>
-        <div>
-          {this.props.formType === "Signup" ? signupFooter : loginFooter}&nbsp;&nbsp;&nbsp;{
-            this.props.otherForm
-          }
         </div>
       </div>
     );

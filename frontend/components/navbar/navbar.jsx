@@ -11,14 +11,14 @@ class Navbar extends React.Component {
       <nav className="login-signup-links">
         <button
           className="login-link"
-          onClick={() => this.props.openModal("Login")}
+          onClick={() => this.props.openModal("login")}
         >
           Login
         </button>
 
         <button
           className="signup-link"
-          onClick={() => this.props.openModal("Signup")}
+          onClick={() => this.props.openModal("signup")}
         >
           Signup
         </button>

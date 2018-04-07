@@ -4,25 +4,41 @@
   width: auto;
   border: 1px solid black;
   width: 100%;
+  margin: 0px;
+}
+.session-form {
+  width: 550px;
+  height: 500px;
 }
 .close-x {
-  position: relative;
+  position: absolute;
   cursor: pointer;
+  font-family: $sans-serif;
+  padding: 25px;
 }
 .input-fields,
 .close-x {
-  margin: 10px;
+  margin: 0px;
   display: block;
-  padding: 4px;
+  // padding: 4px;
   size: 50px;
 }
 
 .session-submit {
   border-radius: 3%;
-  background-color: $pink;
+  background-color: $salmon-pink;
   width: 100%;
   padding: auto;
   text-align: center;
   color: $white;
   font-family: $sans-serif;
+}
+.session-form-footer {
+  display: flex;
+  padding-top: 30px;
+  font-family: fantasy;
+}
+
+.other-form-link {
+  color: $sharks-teal;
 }
