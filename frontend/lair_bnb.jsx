@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 // Components
 import Root from "./components/root";
 import configureStore from "./store/store";
-import { openModal, closeModal } from "./actions/modal_actions";
+import { fetchAllListings } from "./actions/listing_actions";
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;
@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
 
   // TESTING START
-  window.openModal = openModal;
-  window.closeModal = closeModal;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
+  window.fetchAllListings = fetchAllListings;
+
   // TESTING END
 
   ReactDOM.render(<Root store={store} />, root);

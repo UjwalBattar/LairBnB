@@ -21,12 +21,3 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
-
-// console.log(Array.from(this.props.users));
-// if (this.props.users.length > 0) {
-//   // debugger;
-//   Object.keys(this.props.users).map(userId => {
-//     console.log(this.props.users[userId]);
-//     return <p>User: {this.props.users[userId]}</p>;
-//     });
-//   } else {
