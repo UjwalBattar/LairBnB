@@ -1,8 +1,9 @@
 class Listing < ApplicationRecord
-  validates :title, :category, :description, :is_booked?, presence: true
+  validates :title, :category, :description, presence: true
   validates :title, uniqueness: true
 
   belongs_to :host,
-    class_name: :User
+    class_name: "User",
+    foreign_key: :host_id
 
 end

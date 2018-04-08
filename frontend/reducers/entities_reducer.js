@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 
-import listingsReducer from "./listings_reducer";
+import listings from "./listings_reducer";
 
-const entitiesReducer = combineReducers({
-  listings: listingsReducer
+export default combineReducers({
+  listings
 });
-
-export default entitiesReducer;

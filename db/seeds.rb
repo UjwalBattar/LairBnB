@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create!(
+  first_name: "Peter",
+  last_name: "Parker",
+  username: "Spiderman",
+  password: "password",
+  email: "spiderman@mail.com"
+
+)
+
+# Listing.create!(
+#
+#   title: "Wayne Manor",
+#   category: "Good",
+#   description: "Batman's Ballin' Bat Pad",
+#   state: "New York",
+#   city: "Gotham",
+#   latitude: 35.4515073,
+#   longitude: -82.2870588,
+#   host_id: User.find_by(username: "Batman").id
+# )

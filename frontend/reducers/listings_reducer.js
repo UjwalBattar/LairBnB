@@ -9,9 +9,9 @@ const listingsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ALL_LISTINGS:
-      return action.listings;
+      return merge({}, state, action.listings);
     case RECEIVE_SINGLE_LISTING:
-      const newListing = { [action.listing.id]: action.bench };
+      const newListing = { [action.listing.id]: action.listing };
       return merge({}, state, newListing);
     default:
       return state;

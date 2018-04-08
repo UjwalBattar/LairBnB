@@ -19,8 +19,8 @@ export const fetchAllListings = () => dispatch =>
   );
 
 export const fetchSingleListing = id => dispatch =>
-  APIUtil.fetchSingleListing(id).then(payload =>
-    dispatch(receiveSingleListing(payload))
+  APIUtil.fetchSingleListing(id).then(listing =>
+    dispatch(receiveSingleListing(listing))
   );
 
 export const createListing = listing => dispatch =>

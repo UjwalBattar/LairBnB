@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import ListingIndexContainer from "../listings/listing_index_container";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -15,6 +15,7 @@ class HomePage extends React.Component {
       <main>
         <div className="home-splash-container">HEYLO</div>
         <div className="categories-container">CATEGORIES</div>
+        <ListingIndexContainer />
       </main>
     );
   }

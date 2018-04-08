@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import React from "react";
-import ListingsIndex from "./listings_index";
+import ListingIndex from "./listing_index";
 import { fetchAllListings } from "../../actions/listing_actions";
 
 const mapStateToProps = ({ entities }) => {
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ListingsIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(ListingIndex);
