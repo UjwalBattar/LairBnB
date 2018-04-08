@@ -5,7 +5,7 @@ import {
   RECEIVE_SINGLE_LISTING
 } from "../actions/listing_actions";
 
-const listingReducer = (state = {}, action) => {
+const listingsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ALL_LISTINGS:
@@ -17,3 +17,5 @@ const listingReducer = (state = {}, action) => {
       return state;
   }
 };
+
+export default listingsReducer;

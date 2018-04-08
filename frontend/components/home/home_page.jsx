@@ -13,8 +13,8 @@ class HomePage extends React.Component {
   render() {
     return (
       <main>
-        <div className="categories-container" />
-        <div className="home-splash-container">HI</div>
+        <div className="home-splash-container">HEYLO</div>
+        <div className="categories-container">CATEGORIES</div>
       </main>
     );
   }

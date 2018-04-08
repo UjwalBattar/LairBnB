@@ -32,7 +32,9 @@ class SessionForm extends React.Component {
     return (
       <ul>
         {this.props.errors.map((error, i) => (
-          <li key={`error-${i}`}>{error}</li>
+          <li className={`error-${i}`} key={`error-${i}`}>
+            {error}
+          </li>
         ))}
       </ul>
     );
@@ -56,15 +58,17 @@ class SessionForm extends React.Component {
     return (
       <div className="session-form">
         <div onClick={this.props.closeModal} className="close-x">
-          X
+          &nbsp;X&nbsp;
         </div>
         <div className={`${this.props.formType}-form-container`}>
           <form
             onSubmit={this.handleSubmit}
             className={`${this.props.formType}-from-box`}
           >
-            {this.renderErrors()}
-            {this.props.formType === "login" ? "Login to continue" : null}
+            <p className="login-form-header">
+              {this.props.formType === "login" ? "Log in to continue" : null}
+            </p>
+            <div className="session-errors">{this.renderErrors()}</div>
             <div className="input-fields">
               <input
                 type="text"
@@ -74,6 +78,7 @@ class SessionForm extends React.Component {
                 placeholder="Username"
               />
             </div>
+
             {this.props.formType === "signup" ? email : null}
             <div className="input-fields">
               <input
@@ -87,7 +92,7 @@ class SessionForm extends React.Component {
             <input
               className="session-submit"
               type="submit"
-              value={this.props.formType}
+              value={this.props.formType === "signup" ? "Sign up" : "Log in"}
             />
           </form>
           <div className="session-form-footer">

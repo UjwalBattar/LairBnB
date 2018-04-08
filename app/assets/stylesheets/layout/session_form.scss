@@ -1,42 +1,38 @@
-.username-input,
-.password-input,
-.email-input {
-  width: auto;
-  border: 1px solid black;
+.input-fields {
+  border: 1px solid $light-grey;
+  border-radius: 2px;
   width: 100%;
-  margin: 0px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 .session-form {
-  width: 550px;
-  height: 500px;
-}
-.close-x {
-  position: absolute;
-  cursor: pointer;
+  width: 568px;
+  height: 590px;
   font-family: $sans-serif;
-  padding: 25px;
 }
-.input-fields,
-.close-x {
-  margin: 0px;
-  display: block;
-  // padding: 4px;
-  size: 50px;
+.session-errors {
+  align-items: baseline;
+  height: 75px;
+  width: 100%;
+  color: red;
 }
 
 .session-submit {
-  border-radius: 3%;
+  border-radius: 2px;
   background-color: $salmon-pink;
-  width: 100%;
-  padding: auto;
+  width: 100.5%;
   text-align: center;
   color: $white;
   font-family: $sans-serif;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
 }
 .session-form-footer {
   display: flex;
+  justify-content: center;
   padding-top: 30px;
-  font-family: fantasy;
 }
 
 .other-form-link {

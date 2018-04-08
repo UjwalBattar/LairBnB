@@ -1,39 +1,62 @@
 .navbar {
-  // background: $white;
   display: flex;
   justify-content: space-between;
-  padding: 32px;
+  padding: 0 17px 0 17px;
   border-bottom: 1px solid $light-grey;
   font-family: $sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: $grey;
 }
-.home-search-container {
+.home-container {
   display: flex;
-  justify-content: space-between;
+  padding-top: 25px;
 }
 .search-container {
-  padding-left: 10px;
+  padding-left: 30px;
 }
 .searchPlaceholder {
-  width: auto;
-  border: 1px solid black;
+  border: 1px solid $light-grey;
+  position: relative;
+  bottom: 10px;
+  box-shadow: 2px 2px $lighter-grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 250px;
+  padding-left: 25px;
+  color: $lighter-grey;
 }
+
 .nav-bar-links {
   cursor: pointer;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 .login-signup-links {
-  justify-content: space-around;
 }
 
 .login-link {
-  padding-right: 35px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 30px;
+  &:hover {
+    border-bottom: 2px solid $grey;
+  }
 }
 
 .signup-link {
-  padding-right: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+  &:hover {
+    border-bottom: 2px solid $grey;
+  }
 }
 
 .logout-link {
   padding-right: 7px;
+  padding-left: 7px;
+  padding-bottom: 30px;
+  &:hover {
+    border-bottom: 2px solid $grey;
+  }
 }

@@ -1,6 +1,13 @@
 .login-form-container {
-  padding: 40px;
-  height: 84%;
+  padding: 34px;
 }
 .login-form-box {
+}
+
+.login-form-header {
+  width: auto;
+  margin-top: 42px;
+  font-size: 25px;
+  font-weight: 900;
+  color: $grey;
 }

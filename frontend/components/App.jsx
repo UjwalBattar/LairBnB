@@ -6,8 +6,6 @@ import Modal from "./modal/modal";
 import NavbarContainer from "./navbar/navbar_container";
 import HomePageContainer from "./home/home_page_container";
 import { AuthRoute, ProtectedRoute } from "../util/route_api_util";
-import LoginFormContainer from "./session_form/login_form_container";
-import SignupFormContainer from "./session_form/signup_form_container";
 
 const App = () => (
   <div>

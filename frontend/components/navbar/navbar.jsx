@@ -9,43 +9,40 @@ class Navbar extends React.Component {
   render() {
     const loggedOutLinks = () => (
       <nav className="login-signup-links">
-        <button
-          className="login-link"
-          onClick={() => this.props.openModal("login")}
-        >
-          Login
-        </button>
-
-        <button
+        <a
           className="signup-link"
           onClick={() => this.props.openModal("signup")}
         >
-          Signup
-        </button>
+          Sign Up
+        </a>
+
+        <a className="login-link" onClick={() => this.props.openModal("login")}>
+          Log In
+        </a>
       </nav>
     );
 
     const loggedInLinks = (currentUser, logout) => (
       <nav className="logout-links">
-        <button className="logout-link" onClick={logout}>
-          Logout
-        </button>
+        <a className="logout-link" onClick={logout}>
+          Log Out
+        </a>
       </nav>
     );
     return (
       <header className="navbar">
-        <div className="home-search-container">
+        <div className="home-container">
           <h1 className="home-logo-link">
             <a className="home-link" href="/">
               LairBnB
             </a>
           </h1>
-          <label className="search-container">
+          <div className="search-container">
             <input
               className="searchPlaceholder"
               placeholder="Try &quot;App-Academy&quot;"
             />
-          </label>
+          </div>
         </div>
         <div className="nav-bar-links">
           {this.props.currentUser
