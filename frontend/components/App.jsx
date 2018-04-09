@@ -7,6 +7,7 @@ import NavbarContainer from "./navbar/navbar_container";
 import HomePageContainer from "./home/home_page_container";
 import ListingIndexContainer from "./listings/listing_index_container";
 import { AuthRoute, ProtectedRoute } from "../util/route_api_util";
+import ListingShowContainer from "./listings/listing_show_container";
 
 const App = () => (
   <div>
@@ -16,6 +17,7 @@ const App = () => (
     </header>
     <Switch>
       <Route exact path="/" component={HomePageContainer} />
+      <Route path="/listings/:listingId" component={ListingShowContainer} />
       <Route path="/listings" component={ListingIndexContainer} />
     </Switch>
   </div>

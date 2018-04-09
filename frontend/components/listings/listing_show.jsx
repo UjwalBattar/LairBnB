@@ -1,8 +1,15 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
+import ListingIndexItem from "./listing_index_item";
 
-class ListingIndexItem extends React.Component {
+class ListingShow extends React.Component {
   constructor(props) {
     super(props);
+    console.log(this.props.match.params.listingId0);
+  }
+
+  componentDidMount() {
+    this.props.fetchSingleListing(this.props.match.params.listingId);
   }
 
   render() {
@@ -14,6 +21,7 @@ class ListingIndexItem extends React.Component {
       description,
       image
     } = this.props.listing;
+
     return (
       <ul className={`listing-${title}`}>
         <li className={`${title}-image`}>
@@ -29,5 +37,4 @@ class ListingIndexItem extends React.Component {
     );
   }
 }
-
-export default ListingIndexItem;
+export default withRouter(ListingShow);

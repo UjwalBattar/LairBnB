@@ -6,32 +6,35 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# User.create!(
-#   first_name: "Clark",
-#   last_name: "Kent",
-#   username: "Superman",
-#   password: "password",
-#   email: "superman@mail.com",
-#   image: "http://www.monologuedb.com/wp-content/uploads/2011/03/SupermanChristopherReeve.jpg"
-# )
-# User.create!(
-#   first_name: "Bruce",
-#   last_name: "Wayne",
-#   username: "Batman",
-#   password: "password",
-#   email: "batman@mail.com",
-#   image: "https://cdn.mos.cms.futurecdn.net/2sDGvXSwDRvrJqq9YN5oc4-480-80.jpg"
-#
-# )
-# User.create!(
-#   first_name: "Peter",
-#   last_name: "Parker",
-#   username: "Spiderman",
-#   password: "password",
-#   email: "spiderman@mail.com",
-#   image: "http://cdn2-www.superherohype.com/assets/uploads/gallery/spider-man-costumes/amazingspider-mancostumeptsony.jpg"
-#
-# )
+Listing.delete_all
+User.delete_all
+
+User.create!(
+  first_name: "Clark",
+  last_name: "Kent",
+  username: "Superman",
+  password: "password",
+  email: "superman@mail.com",
+  image: "http://www.monologuedb.com/wp-content/uploads/2011/03/SupermanChristopherReeve.jpg"
+)
+User.create!(
+  first_name: "Bruce",
+  last_name: "Wayne",
+  username: "Batman",
+  password: "password",
+  email: "batman@mail.com",
+  image: "https://cdn.mos.cms.futurecdn.net/2sDGvXSwDRvrJqq9YN5oc4-480-80.jpg"
+
+)
+User.create!(
+  first_name: "Peter",
+  last_name: "Parker",
+  username: "Spiderman",
+  password: "password",
+  email: "spiderman@mail.com",
+  image: "http://cdn2-www.superherohype.com/assets/uploads/gallery/spider-man-costumes/amazingspider-mancostumeptsony.jpg"
+
+)
 
 Listing.create!(
 

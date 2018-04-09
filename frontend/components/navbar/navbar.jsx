@@ -34,7 +34,7 @@ class Navbar extends React.Component {
         <div className="home-container">
           <h1 className="home-logo-link">
             <a className="home-link" href="/">
-              LairBnB
+              Lair BnB
             </a>
           </h1>
           <div className="search-container">
@@ -65,3 +65,12 @@ export default Navbar;
 // <Link to="/login" onClick={logout}>
 //   Log Out
 // </Link>
+
+// <a className="home-link" href="/">
+//   <img
+//     src="http://hkn8x2hjvsvfpoet2v8knms0-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/LAIRLOGO.png"
+//     alt="Lair BnB"
+//     height="50%"
+//     width="5%"
+//   />
+// </a>

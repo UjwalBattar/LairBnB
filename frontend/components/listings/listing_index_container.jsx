@@ -3,15 +3,16 @@ import React from "react";
 import ListingIndex from "./listing_index";
 import { fetchAllListings } from "../../actions/listing_actions";
 
-const mapStateToProps = ({ entities }) => {
+const mapStateToProps = ({ entities, session }) => {
   return {
-    listings: entities.listings
+    listings: entities.listings,
+    currentUser: session.currentUser
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchAllListings: () => dispatch(fetchAllListings())
+    fetchAllListings: data => dispatch(fetchAllListings(data))
   };
 };
 

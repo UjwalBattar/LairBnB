@@ -13,8 +13,8 @@ export const receiveSingleListing = listing => ({
   listing
 });
 
-export const fetchAllListings = () => dispatch =>
-  APIUtil.fetchAllListings().then(listings =>
+export const fetchAllListings = data => dispatch =>
+  APIUtil.fetchAllListings(data).then(listings =>
     dispatch(receiveAllListings(listings))
   );
 
