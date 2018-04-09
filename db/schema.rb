@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180408201426) do
+ActiveRecord::Schema.define(version: 20180409025003) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20180408201426) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "is_booked?", default: false
+    t.string "image"
     t.index ["category"], name: "index_listings_on_category"
     t.index ["state"], name: "index_listings_on_state"
     t.index ["title"], name: "index_listings_on_title", unique: true
@@ -47,6 +48,7 @@ ActiveRecord::Schema.define(version: 20180408201426) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date_of_birth"
+    t.string "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true

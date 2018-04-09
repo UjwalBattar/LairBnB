@@ -1,4 +1,6 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
+import ListingIndexItem from "./listing_index_item";
 
 class ListingIndex extends React.Component {
   componentDidMount() {
@@ -6,8 +8,13 @@ class ListingIndex extends React.Component {
   }
 
   render() {
-    return <div>"hello"</div>;
+    const { listings } = this.props;
+    let allListings = Object.values(listings).map(listing => {
+      return <ListingIndexItem listing={listing} key={listing.id} />;
+    });
+
+    return <div>{allListings}</div>;
   }
 }
 
-export default ListingIndex;
+export default withRouter(ListingIndex);
