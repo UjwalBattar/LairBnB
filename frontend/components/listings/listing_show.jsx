@@ -5,7 +5,6 @@ import ListingIndexItem from "./listing_index_item";
 class ListingShow extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props.match.params.listingId0);
   }
 
   componentDidMount() {

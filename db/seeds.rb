@@ -36,6 +36,16 @@ User.create!(
 
 )
 
+User.create!(
+  first_name: "Tony",
+  last_name: "Stark",
+  username: "Ironman",
+  password: "password",
+  email: "ironman@mail.com",
+  image: "http://cdn2-www.superherohype.com/assets/uploads/gallery/spider-man-costumes/amazingspider-mancostumeptsony.jpg"
+
+)
+
 Listing.create!(
 
   title: "Wayne Manor",
@@ -60,4 +70,93 @@ Listing.create!(
   longitude: 21.038904,
   host_id: User.find_by(username: "Superman").id,
   image: "http://www.geekkafe.com/wp-content/uploads/2018/03/Supermans-Fortress-of-Solitude.jpg"
+)
+Listing.create!(
+
+  title: "Stark Mansion",
+  category: "Good",
+  description: "Stark Pad",
+  state: "California",
+  city: "Malibu",
+  latitude: 34.005,
+  longitude: -118.8091667,
+  host_id: User.find_by(username: "Ironman").id,
+  image: "https://vignette.wikia.nocookie.net/ironman/images/6/62/Photo%28128%29.jpg/revision/latest?cb=20130530125452"
+)
+
+Listing.create!(
+
+  title: "Listing3",
+  category: "Evil",
+  description: "Batman's Ballin' Bat Pad",
+  state: "New York",
+  city: "Gotham",
+  latitude: 35.4515073,
+  longitude: -82.2870588,
+  host_id: User.find_by(username: "Batman").id,
+  image: "http://media1.break.com/dnet/media/2011/12/22/d36b5d85-fc45-421d-894f-fbe80ad71b5d_thumb.jpeg"
+)
+
+Listing.create!(
+
+  title: "Listing 4",
+  category: "Evil",
+  description: "Super Pad",
+  state: "New York",
+  city: "Gotham",
+  latitude: 80.076625,
+  longitude: 21.038904,
+  host_id: User.find_by(username: "Superman").id,
+  image: "http://www.geekkafe.com/wp-content/uploads/2018/03/Supermans-Fortress-of-Solitude.jpg"
+)
+
+Listing.create!(
+
+  title: "Evil Stark Mansion",
+  category: "Evil",
+  description: "Stark Pad",
+  state: "California",
+  city: "Malibu",
+  latitude: 34.005,
+  longitude: -118.8091667,
+  host_id: User.find_by(username: "Ironman").id,
+  image: "https://vignette.wikia.nocookie.net/ironman/images/6/62/Photo%28128%29.jpg/revision/latest?cb=20130530125452"
+)
+
+Listing.create!(
+
+  title: "Listing 5",
+  category: "Fantasy",
+  description: "Batman's Ballin' Bat Pad",
+  state: "New York",
+  city: "Gotham",
+  latitude: 35.4515073,
+  longitude: -82.2870588,
+  host_id: User.find_by(username: "Batman").id,
+  image: "http://media1.break.com/dnet/media/2011/12/22/d36b5d85-fc45-421d-894f-fbe80ad71b5d_thumb.jpeg"
+)
+
+Listing.create!(
+
+  title: "Listing 6",
+  category: "Fantasy",
+  description: "Super Pad",
+  state: "New York",
+  city: "Gotham",
+  latitude: 80.076625,
+  longitude: 21.038904,
+  host_id: User.find_by(username: "Superman").id,
+  image: "http://www.geekkafe.com/wp-content/uploads/2018/03/Supermans-Fortress-of-Solitude.jpg"
+)
+Listing.create!(
+
+  title: "Fantasy Stark Mansion",
+  category: "Fantasy",
+  description: "Stark Pad",
+  state: "California",
+  city: "Malibu",
+  latitude: 34.005,
+  longitude: -118.8091667,
+  host_id: User.find_by(username: "Ironman").id,
+  image: "https://vignette.wikia.nocookie.net/ironman/images/6/62/Photo%28128%29.jpg/revision/latest?cb=20130530125452"
 )

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, withRouter } from "react-router-dom";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
@@ -7,6 +8,7 @@ class ListingIndexItem extends React.Component {
 
   render() {
     const {
+      id,
       title,
       city,
       state,
@@ -15,19 +17,21 @@ class ListingIndexItem extends React.Component {
       image
     } = this.props.listing;
     return (
-      <ul className={`listing-${title}`}>
-        <li className={`${title}-image`}>
-          <img src={image} />
-        </li>
-        <li>{title}</li>
-        <li>{city}</li>
-        <li>{state}</li>
-        <li>{category}</li>
-        <li>{description}</li>
-        <br />
-      </ul>
+      <div className="listing-item-container">
+        <Link className="listing-item" to={`listings/${id}`}>
+          <ul className={`listing-preview`}>
+            <img className={`lisitng-preview-image`} src={image} />
+            <li className="listing-preview-title">{title}</li>
+            <li className="listing-preview-city">{city}</li>
+            <li className="listing-preview-state">{state}</li>
+            <li className="listing-preview-category">{category}</li>
+            <li className="listing-preview-description">{description}</li>
+            <br />
+          </ul>
+        </Link>
+      </div>
     );
   }
 }
 
-export default ListingIndexItem;
+export default withRouter(ListingIndexItem);

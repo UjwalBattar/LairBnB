@@ -6,9 +6,20 @@ class Navbar extends React.Component {
     super(props);
   }
 
+  handleGuestLogin(e) {
+    e.preventDefault();
+    const guestUser = { username: "Spiderman", password: "password" };
+    console.log(this.props);
+    this.props.login(guestUser);
+  }
+
   render() {
     const loggedOutLinks = () => (
       <nav className="login-signup-links">
+        <a className="demo-link" onClick={e => this.handleGuestLogin(e)}>
+          Demo
+        </a>
+
         <a
           className="signup-link"
           onClick={() => this.props.openModal("signup")}
