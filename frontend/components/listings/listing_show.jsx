@@ -12,6 +12,8 @@ class ListingShow extends React.Component {
   }
 
   render() {
+    if (!this.props.listing) return null;
+
     const {
       title,
       city,
