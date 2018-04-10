@@ -26,10 +26,6 @@ class ListingShow extends React.Component {
         <div className="listing-show-image">
           <img src={image} />
         </div>
-        <br />
-        <aside className="listing-show-booking-form">
-          <BookingFormContainer />
-        </aside>
         <div className="listing-show-container">
           <p className="listing-show-title">{title}</p>
           <p className="listing-show-city">{city}</p>
@@ -38,6 +34,9 @@ class ListingShow extends React.Component {
           <br />
           <p className="listing-show-description">{description}</p>
         </div>
+        <aside className="listing-show-booking-form">
+          <BookingFormContainer />
+        </aside>
       </div>
     );
   }

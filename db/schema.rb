@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180409025003) do
+ActiveRecord::Schema.define(version: 20180410160829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "listings", force: :cascade do |t|
     t.string "title", null: false
-    t.string "street_address"
     t.string "city"
     t.string "state"
     t.string "country"
@@ -33,6 +32,12 @@ ActiveRecord::Schema.define(version: 20180409025003) do
     t.datetime "updated_at", null: false
     t.boolean "is_booked?", default: false
     t.string "image"
+    t.integer "price"
+    t.integer "beds"
+    t.integer "guests"
+    t.integer "bedrooms"
+    t.integer "baths"
+    t.string "street_address"
     t.index ["category"], name: "index_listings_on_category"
     t.index ["state"], name: "index_listings_on_state"
     t.index ["title"], name: "index_listings_on_title", unique: true

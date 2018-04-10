@@ -1,5 +1,7 @@
 import React from "react";
 
+import ListingMap from "../map/map";
+
 class Search extends React.Component {
   constructor(props) {
     super(props);

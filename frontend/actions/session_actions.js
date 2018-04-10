@@ -19,7 +19,7 @@ export const clearErrors = () => ({
 });
 
 export const signup = user => dispatch => {
-  APIUtil.signup(user).then(
+  return APIUtil.signup(user).then(
     formUser => dispatch(receiveCurrentUser(formUser)),
     err => dispatch(receiveErrors(err.responseJSON))
   );
