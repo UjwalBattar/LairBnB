@@ -1,0 +1,31 @@
+.listing-item-container {
+  max-height: 350px;
+  max-width: 350px;
+  padding: 8px;
+}
+
+.listing-index-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listing-preview-image {
+  height: 215px;
+  width: 334px;
+  border-radius: 3px;
+}
+
+.listing-index-header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.listing-index-map-container {
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  height: 100%;
+  width: 35%;
+  border: 1px solid $sharks-teal;
+}

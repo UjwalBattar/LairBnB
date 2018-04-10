@@ -19,8 +19,10 @@ class ListingIndexItem extends React.Component {
     return (
       <div className="listing-item-container">
         <Link className="listing-item" to={`listings/${id}`}>
-          <ul className={`listing-preview`}>
-            <img className={`lisitng-preview-image`} src={image} />
+          <ul className="listing-preview">
+            <li className="preview-image">
+              <img className="listing-preview-image" src={image} />
+            </li>
             <li className="listing-preview-title">{title}</li>
             <li className="listing-preview-city">{city}</li>
             <li className="listing-preview-state">{state}</li>

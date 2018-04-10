@@ -1,5 +1,6 @@
 import React from "react";
 import ListingIndexContainer from "../listings/listing_index_container";
+import SearchContainer from "../search/search_container";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -13,7 +14,13 @@ class HomePage extends React.Component {
   render() {
     return (
       <main>
-        <div className="home-splash-container">HEYLO</div>
+        {this.props.currentUser ? null : (
+          <div className="home-splash-container">
+            <div className="splash-search-container">
+              <SearchContainer />
+            </div>
+          </div>
+        )}
         <div className="categories-container">CATEGORIES</div>
         <ListingIndexContainer />
       </main>

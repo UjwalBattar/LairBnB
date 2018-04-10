@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SearchContainer from "../search/search_container";
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -48,11 +49,8 @@ class Navbar extends React.Component {
               Lair BnB
             </a>
           </h1>
-          <div className="search-container">
-            <input
-              className="searchPlaceholder"
-              placeholder="Try &quot;App-Academy&quot;"
-            />
+          <div className="nav-search-container">
+            {this.props.currentUser ? <SearchContainer /> : null}
           </div>
         </div>
         <div className="nav-bar-links">
@@ -65,23 +63,3 @@ class Navbar extends React.Component {
   }
 }
 export default Navbar;
-
-// const personalGreeting = (currentUser, logout) => (
-// 	<hgroup className="header-group">
-//     <h2 className="header-name">Hi, {currentUser.username}!</h2>
-//     <button className="header-button" onClick={logout}>Log Out</button>
-// 	</hgroup>
-// );<label className="search-container">
-
-// <Link to="/login" onClick={logout}>
-//   Log Out
-// </Link>
-
-// <a className="home-link" href="/">
-//   <img
-//     src="http://hkn8x2hjvsvfpoet2v8knms0-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/LAIRLOGO.png"
-//     alt="Lair BnB"
-//     height="50%"
-//     width="5%"
-//   />
-// </a>
