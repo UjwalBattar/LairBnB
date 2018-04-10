@@ -21,7 +21,8 @@
 @import "layout/navbar",
   "layout/session_form",
   "layout/modal",
-  "layout/search_bar.scss";
+  "layout/search_bar",
+  "layout/map";
 
 // Components
 @import "components/signup_form",
@@ -30,8 +31,3 @@
 
 // Pages
 @import "pages/home_page", "pages/listing_show", "pages/listing_index";
-
-#map-container {
-  height: 500px;
-  width: 500px;
-}

@@ -7,6 +7,7 @@
 .listing-index-content {
   display: flex;
   flex-wrap: wrap;
+  width: calc(100% - 520px);
 }
 
 .listing-preview-image {
@@ -27,7 +28,7 @@
   top: 20px;
   float: right;
   margin-right: 10px;
-  height: 100%;
-  width: 35%;
+  height: 800px;
+  width: 500px;
   border: 1px solid $sharks-teal;
 }

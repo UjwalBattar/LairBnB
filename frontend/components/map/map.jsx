@@ -16,9 +16,11 @@ class ListingMap extends React.Component {
 
   render() {
     return (
-      <div className="mapp" id="map-container" ref="map">
-        MAP GOES HERE
-      </div>
+      <div
+        className="map-container"
+        id="map-container"
+        ref={map => (this.mapNode = map)}
+      />
     );
   }
 }

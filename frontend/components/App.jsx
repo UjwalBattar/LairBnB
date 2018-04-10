@@ -8,6 +8,7 @@ import HomePageContainer from "./home/home_page_container";
 import ListingIndexContainer from "./listings/listing_index_container";
 import { AuthRoute, ProtectedRoute } from "../util/route_api_util";
 import ListingShowContainer from "./listings/listing_show_container";
+import NotFound from "./not_found";
 
 const App = () => (
   <div>
@@ -17,8 +18,13 @@ const App = () => (
     </header>
     <Switch>
       <Route exact path="/" component={HomePageContainer} />
-      <Route path="/listings/:listingId" component={ListingShowContainer} />
+      <Route
+        exact
+        path="/listings/:listingId"
+        component={ListingShowContainer}
+      />
       <Route path="/listings" component={ListingIndexContainer} />
+      <Route path="/*" component={NotFound} />
     </Switch>
   </div>
 );

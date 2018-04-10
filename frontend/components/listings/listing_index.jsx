@@ -18,9 +18,11 @@ class ListingIndex extends React.Component {
       <div className="listing-index-wrapper">
         <h1 className="listing-index-header">Lairs around the world</h1>
         <div className="listing-index-container">
-          <div className="listing-index-map-container">
-            <ListingMap />
-          </div>
+          {this.props.currentUser && this.props.pathname !== "/" ? (
+            <aside className="listing-index-map-container">
+              <ListingMap />
+            </aside>
+          ) : null}
           <div className="listing-index-content">{allListings}</div>
         </div>
       </div>
