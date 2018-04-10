@@ -1,5 +1,7 @@
 .navbar {
   display: flex;
+  position: sticky;
+  top: auto;
   justify-content: space-between;
   padding: 0 17px 0 17px;
   border-bottom: 1px solid $light-grey;

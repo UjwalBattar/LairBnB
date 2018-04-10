@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import ListingIndexItem from "./listing_index_item";
-
+import BookingFormContainer from "../booking/booking_form_container";
 class ListingShow extends React.Component {
   constructor(props) {
     super(props);
@@ -22,17 +22,23 @@ class ListingShow extends React.Component {
     } = this.props.listing;
 
     return (
-      <ul className={`listing-${title}`}>
-        <li className={`${title}-image`}>
+      <div className="listing-show-page">
+        <div className="listing-show-image">
           <img src={image} />
-        </li>
-        <li>{title}</li>
-        <li>{city}</li>
-        <li>{state}</li>
-        <li>{category}</li>
-        <li>{description}</li>
+        </div>
         <br />
-      </ul>
+        <aside className="listing-show-booking-form">
+          <BookingFormContainer />
+        </aside>
+        <div className="listing-show-container">
+          <p className="listing-show-title">{title}</p>
+          <p className="listing-show-city">{city}</p>
+          <p className="listing-show-state">{state}</p>
+          <p className="listing-show-category">{category}</p>
+          <br />
+          <p className="listing-show-description">{description}</p>
+        </div>
+      </div>
     );
   }
 }

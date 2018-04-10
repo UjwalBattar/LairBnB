@@ -1,0 +1,30 @@
+.listing-show-image {
+  width: 100%;
+  max-height: 718px;
+  position: relative;
+  overflow: hidden;
+}
+
+.listing-show-description {
+  border: 1px solid black;
+  height: 1800px;
+  max-width: 900px;
+}
+
+.listing-show-booking-form {
+  float: right;
+  position: sticky;
+  top: 20px;
+  margin-right: 10%;
+  max-width: 400px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.listing-show-container {
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 30px;
+  width: 900px;
+  flex-wrap: wrap;
+}

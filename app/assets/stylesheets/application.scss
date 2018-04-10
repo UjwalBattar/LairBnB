@@ -24,7 +24,9 @@
   "layout/search_bar.scss";
 
 // Components
-@import "components/signup_form", "components/login_form";
+@import "components/signup_form",
+  "components/login_form",
+  "components/booking_form";
 
 // Pages
 @import "pages/home_page", "pages/listing_show", "pages/listing_index";
