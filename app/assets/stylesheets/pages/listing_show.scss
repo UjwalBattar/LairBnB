@@ -5,25 +5,56 @@
   overflow: hidden;
 }
 
-.listing-show-description {
-  border: 1px solid black;
-  height: 1800px;
-  max-width: 900px;
-}
-
 .listing-show-booking-form {
   float: right;
   position: sticky;
   top: 20px;
-  margin-right: 10%;
+  margin-top: 50px;
+  margin-right: 75px;
   max-width: 400px;
   height: 400px;
-  border: 1px solid black;
+  border: 1px solid $light-grey;
 }
 
 .listing-show-container {
-  border: 1px solid black;
   display: inline-block;
-  margin-left: 30px;
-  width: 900px;
+  color: $dark-grey;
+  margin: 0 50px 0 150px;
+  max-width: calc(100% - 600px);
+  width: 45%;
+  min-width: 400px;
+  font-family: $sans-serif;
+}
+
+.listing-show-title {
+  font-weight: 900;
+  font-size: 36px;
+  color: $dark-grey;
+  padding-left: 10px;
+}
+
+.listing-show-city-state {
+  font-weight: lighter;
+}
+.listing-show-attributes {
+  display: inline-flex;
+  padding: 5px 0;
+}
+.show-attribute {
+  padding-right: 20px;
+  font-weight: lighter;
+}
+.listing-show-description {
+  border-top: 1px solid $light-grey;
+  height: 300px;
+  max-width: 900px;
+  margin-top: 10px;
+  color: $dark-grey;
+}
+
+.listing-map-container {
+  max-width: 900px;
+  margin-top: 10px;
+  border: 1px solid black;
+  height: 400px;
 }

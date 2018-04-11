@@ -2,6 +2,7 @@
   display: flex;
   position: sticky;
   top: auto;
+  max-height: 79px;
   justify-content: space-between;
   padding: 0 17px 0 17px;
   border-bottom: 1px solid $light-grey;
@@ -16,6 +17,17 @@
 .home-logo-link {
   background-image: url("http://hkn8x2hjvsvfpoet2v8knms0-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/LAIRLOGO.png");
   z-index: 10;
+  margin-bottom: 40px;
+}
+
+.home-link {
+  max-height: inherit;
+}
+.home-logo {
+  position: relative;
+  bottom: 23px;
+  max-height: 70px;
+  max-width: 70px;
 }
 .nav-search-container {
   padding-left: 30px;
@@ -25,8 +37,8 @@
 
 .nav-bar-links {
   cursor: pointer;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 .login-signup-links {
 }
@@ -34,7 +46,7 @@
 .login-link {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   &:hover {
     border-bottom: 2px solid $grey;
   }
@@ -43,7 +55,7 @@
 .signup-link {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   &:hover {
     border-bottom: 2px solid $grey;
   }
@@ -51,17 +63,31 @@
 .demo-link {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   &:hover {
     border-bottom: 2px solid $grey;
   }
 }
-
+.profile-pic-container {
+  padding-bottom: 40px;
+}
+.profile-pic {
+  position: relative;
+  bottom: 10px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+.logout-links {
+  display: inline-flex;
+  max-height: 49px;
+}
 .logout-link {
   padding-right: 7px;
   padding-left: 7px;
-  padding-bottom: 30px;
+  // padding-bottom: 25px;
   &:hover {
     border-bottom: 2px solid $grey;
   }
+  margin-right: 30px;
 }

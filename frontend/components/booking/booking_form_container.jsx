@@ -10,4 +10,4 @@ const mapStateToProps = ({ session }) => {
 
 const mapDispatchToProps = dispatch => {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(BookingForm);
+export default connect(mapStateToProps, null)(BookingForm);

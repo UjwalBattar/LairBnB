@@ -28,10 +28,9 @@ class ListingMap extends React.Component {
       this.handleMarkerClick.bind(this)
     );
     if (this.props.singleListing) {
-      this.props.fetchSingleListing(this.props.listingId);
+      this.MarkerManager.createMarkerFromListing(this.props.listing);
     } else {
       this.registerListeners();
-      debugger;
       this.MarkerManager.updateMarkers(Object.values(this.props.listings));
     }
   }

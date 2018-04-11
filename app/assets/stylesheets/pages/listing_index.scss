@@ -2,12 +2,13 @@
   max-height: 350px;
   max-width: 350px;
   padding: 8px;
+  transition: max-width 0.3s ease-out;
 }
 
 .listing-index-content {
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% - 520px);
+  // width: calc(100% - 520px);
 }
 
 .listing-preview-image {
