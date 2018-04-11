@@ -51,7 +51,7 @@ Listing.create!(
 
   title: "Wayne Manor",
   category: "Good",
-  description: "Batman's Ballin' Bat Pad",
+  description: "Batman's Ballin' Bat Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "New York",
   city: "Gotham",
   beds: 5,
@@ -69,7 +69,7 @@ Listing.create!(
 
   title: "Fortress Of Solitude",
   category: "Good",
-  description: "Super Pad",
+  description: "Super Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "California",
   city: "San Francisco",
   beds: 1,
@@ -86,7 +86,7 @@ Listing.create!(
 
   title: "Stark Mansion",
   category: "Good",
-  description: "Stark Pad",
+  description: "Stark Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "California",
   city: "Malibu",
   beds: 10,
@@ -104,7 +104,7 @@ Listing.create!(
 
   title: "Evil Batcave",
   category: "Evil",
-  description: "Batman's Ballin' Bat Pad",
+  description: "Batman's Ballin' Bat Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "New York",
   city: "Gotham",
   beds: 5,
@@ -122,7 +122,7 @@ Listing.create!(
 
   title: "Super Bad Pad",
   category: "Evil",
-  description: "Super Pad",
+  description: "Super Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "California",
   city: "San Francisco",
   beds: 1,
@@ -140,7 +140,7 @@ Listing.create!(
 
   title: "Evil Stark Mansion",
   category: "Evil",
-  description: "Stark Pad",
+  description: "Stark Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "California",
   city: "Malibu",
   beds: 10,
@@ -158,7 +158,7 @@ Listing.create!(
 
   title: "Fantasy Bat Mansion",
   category: "Fantasy",
-  description: "Batman's Ballin' Bat Pad",
+  description: "Batman's Ballin' Bat Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "New York",
   city: "Gotham",
   beds: 5,
@@ -176,7 +176,7 @@ Listing.create!(
 
   title: "Fantasy Fortress",
   category: "Fantasy",
-  description: "Super Pad",
+  description: "Super Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "California",
   city: "San Francisco",
   beds: 1,
@@ -193,7 +193,7 @@ Listing.create!(
 
   title: "Fantasy Stark Mansion",
   category: "Fantasy",
-  description: "Stark Pad",
+  description: "Stark Pad Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   state: "California",
   city: "Malibu",
   beds: 10,
