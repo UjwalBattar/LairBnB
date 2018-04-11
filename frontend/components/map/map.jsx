@@ -18,20 +18,20 @@ class ListingMap extends React.Component {
   // console.log(this.props);
   componentDidMount() {
     // set the map to show SF
-
+    let centerLatitude = this.props.listing
+      ? this.props.listing.latitude
+      : 37.7758;
+    let centerLongitude = this.props.listing
+      ? this.props.listing.longitude
+      : -122.435;
     const mapOptions = {
       center: {
-        lat: this.props.listing.latitude
-          ? this.props.listing.latitude
-          : 37.7758,
-        lng: this.props.listing.longitude
-          ? this.props.listing.longitude
-          : -122.435
+        lat: centerLatitude,
+        lng: centerLongitude
       }, // this is SF
       zoom: 13
     };
 
-    debugger;
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(
       this.map,
@@ -81,3 +81,11 @@ class ListingMap extends React.Component {
 }
 
 export default withRouter(ListingMap);
+
+// this.props.listing.latitude
+//   ? this.props.listing.latitude
+//   :
+
+// this.props.listing.longitude
+//   ? this.props.listing.longitude
+//   :
