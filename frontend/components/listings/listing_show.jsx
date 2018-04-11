@@ -27,7 +27,7 @@ class ListingShow extends React.Component {
       baths,
       bedrooms
     } = this.props.listing;
-    console.log(this.props);
+
     return (
       <div className="listing-show-page">
         <div className="listing-show-image">

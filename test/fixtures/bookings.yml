@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  is_booked?: false
+  host_id: 1
+  listing_id: 1
+  guest_it: 1
+  from_date: 2018-04-11
+  to_date: 2018-04-11
+
+two:
+  is_booked?: false
+  host_id: 1
+  listing_id: 1
+  guest_it: 1
+  from_date: 2018-04-11
+  to_date: 2018-04-11

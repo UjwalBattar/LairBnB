@@ -18,10 +18,20 @@ class ListingMap extends React.Component {
   // console.log(this.props);
   componentDidMount() {
     // set the map to show SF
+
     const mapOptions = {
-      center: { lat: 37.7758, lng: -122.435 }, // this is SF
+      center: {
+        lat: this.props.listing.latitude
+          ? this.props.listing.latitude
+          : 37.7758,
+        lng: this.props.listing.longitude
+          ? this.props.listing.longitude
+          : -122.435
+      }, // this is SF
       zoom: 13
     };
+
+    debugger;
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(
       this.map,

@@ -11,6 +11,8 @@ class Listing < ApplicationRecord
     class_name: "User",
     foreign_key: :host_id
 
+  has_many :bookings, dependent: :destroy
+
   def address
     [street_address, city, state, country].compact.join(", ")
   end
@@ -21,7 +23,20 @@ class Listing < ApplicationRecord
       .where("lng > ?", bounds[:southWest][:lng])
       .where("lng < ?", bounds[:northEast][:lng])
   end
-  
+
 end
 
 # Listing.create(title: "AA", category: "Good", description: "school", street_address: "825 Battery", city: "San Francisco", state: "CA", country: "US")
+# def available_between?(date_begin, date_end)
+#    conflicting_bookings = self.bookings.where.not(
+#      "(date_begin < :requested_start_date AND date_end < :requested_start_date)
+#      OR
+#      (date_end > :requested_end_date AND date_end > :requested_end_date)",
+#       requested_start_date: date_begin, requested_end_date: date_end)
+#    return (date_begin..date_end).all? do |day|
+#      num_bookings_for_day = conflicting_bookings.select{
+#        |booking| booking.date_begin <= day && booking.date_end >= day}
+#        .count
+#      num_bookings_for_day < self.places
+#    end
+#  end
