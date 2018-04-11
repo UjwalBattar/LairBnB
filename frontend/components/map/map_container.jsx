@@ -1,14 +1,14 @@
 import { connect } from "react-redux";
+import React from "react";
+import ListingMap from "./map";
 import { updateFilter } from "../../actions/filter_actions";
 
-import Search from "./search";
-
-// const mapStateToProps = state => ({
-//   listings: state.entities.listings
-// });
+const mapStateToProps = state => ({
+  listings: state.entities.listings
+});
 
 const mapDispatchToProps = dispatch => ({
   updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 
-export default connect(null, mapDispatchToProps)(Search);
+export default connect(mapStateToProps, mapDispatchToProps)(ListingMap);

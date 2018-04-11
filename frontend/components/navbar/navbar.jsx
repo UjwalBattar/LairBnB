@@ -10,7 +10,6 @@ class Navbar extends React.Component {
   handleGuestLogin(e) {
     e.preventDefault();
     const guestUser = { username: "Spiderman", password: "password" };
-    console.log(this.props);
     this.props.login(guestUser);
   }
 

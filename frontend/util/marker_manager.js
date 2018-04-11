@@ -1,4 +1,6 @@
-export default class MarkerManager {
+/* global google:false */
+
+class MarkerManager {
   constructor(map) {
     this.map = map;
     this.markers = {};
@@ -6,6 +8,7 @@ export default class MarkerManager {
 
   updateMarkers(listings) {
     const listingsObj = {};
+    // console.log(listings);
     listings.forEach(listing => (listingsObj[listing.id] = listing));
 
     listings
@@ -27,9 +30,6 @@ export default class MarkerManager {
       map: this.map,
       listingId: listing.id
     });
-
-    marker.addListener("click", () => this.handleClick(listing));
-    this.markers[marker.listingId] = marker;
   }
 
   removeMarker(marker) {
@@ -37,8 +37,11 @@ export default class MarkerManager {
     delete this.markers[marker.listingId];
   }
 }
+
+export default MarkerManager;
 //
-// marker.addListener('click', () => this.handleClick(bench));
-// this.markers[marker.benchId] = marker;
+
+// marker.addListener("click", () => this.handleClick(listing));
+// this.markers[marker.listingId] = marker;
 // if usimg this, must pass handleClick to invocation of handleClick->
 // this.createMarkerFromListing(newListing, handleClick)

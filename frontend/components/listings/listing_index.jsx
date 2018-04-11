@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import ListingIndexItem from "./listing_index_item";
-import ListingMap from "../map/map";
+import ListingMapContainer from "../map/map_container";
 
 class ListingIndex extends React.Component {
   componentDidMount() {
@@ -20,7 +20,7 @@ class ListingIndex extends React.Component {
         <div className="listing-index-container">
           {this.props.currentUser && this.props.pathname !== "/" ? (
             <aside className="listing-index-map-container">
-              <ListingMap />
+              <ListingMapContainer />
             </aside>
           ) : null}
           <div className="listing-index-content">{allListings}</div>

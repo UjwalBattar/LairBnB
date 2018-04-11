@@ -9,7 +9,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def index
-    @listings = Listing.in_bounds(params[:bounds]) || Listing.all
+    @listings = (bounds ? Listing.in_bounds(bounds) : Listing.all)
   end
 
   def show
