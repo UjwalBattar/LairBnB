@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import SearchContainer from "../search/search_container";
 
@@ -55,7 +55,9 @@ class Navbar extends React.Component {
             </a>
           </h1>
           <div className="nav-search-container">
-            {this.props.currentUser ? <SearchContainer /> : null}
+            {this.props.currentUser || this.props.location.pathname !== "/" ? (
+              <SearchContainer />
+            ) : null}
           </div>
         </div>
         <div className="nav-bar-links">
@@ -67,4 +69,4 @@ class Navbar extends React.Component {
     );
   }
 }
-export default Navbar;
+export default withRouter(Navbar);
