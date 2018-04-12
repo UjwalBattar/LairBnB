@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import HomePage from "./home_page";
-import { requestAllUsers } from "../../actions/user_actions";
+import { fetchAllUsers } from "../../actions/user_actions";
 
 const mapStateToProps = ({ session }) => ({
   currentUser: session.currentUser
@@ -9,7 +9,7 @@ const mapStateToProps = ({ session }) => ({
 
 const mapDispatchToProps = dispatch => {
   return {
-    requestAllUsers: () => dispatch(requestAllUsers())
+    fetchAllUsers: () => dispatch(fetchAllUsers())
   };
 };
 

@@ -7,9 +7,7 @@ class HomePage extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.props.requestAllUsers();
-  }
+  componentDidMount() {}
 
   render() {
     return (

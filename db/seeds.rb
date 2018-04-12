@@ -23,7 +23,7 @@ User.create!(
   username: "Batman",
   password: "password",
   email: "batman@mail.com",
-  image: "https://cdn.mos.cms.futurecdn.net/2sDGvXSwDRvrJqq9YN5oc4-480-80.jpg"
+  image: "http://jonvilma.com/images/batman-4.jpg"
 
 )
 User.create!(
@@ -42,7 +42,7 @@ User.create!(
   username: "Ironman",
   password: "password",
   email: "ironman@mail.com",
-  image: "http://cdn2-www.superherohype.com/assets/uploads/gallery/spider-man-costumes/amazingspider-mancostumeptsony.jpg"
+  image: "https://imgs.inkfrog.com/pix/mymetallic/Ironman-voice-4.gif"
 
 )
 
@@ -97,7 +97,7 @@ Listing.create!(
   latitude: 34.005,
   longitude: -118.8091667,
   host_id: User.find_by(username: "Ironman").id,
-  image: "https://vignette.wikia.nocookie.net/ironman/images/6/62/Photo%28128%29.jpg/revision/latest?cb=20130530125452"
+  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest?cb=20131127033251"
 )
 
 Listing.create!(
@@ -151,7 +151,7 @@ Listing.create!(
   latitude: 34.005,
   longitude: -118.8091667,
   host_id: User.find_by(username: "Ironman").id,
-  image: "https://vignette.wikia.nocookie.net/ironman/images/6/62/Photo%28128%29.jpg/revision/latest?cb=20130530125452"
+  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest?cb=20131127033251"
 )
 
 Listing.create!(
@@ -204,5 +204,5 @@ Listing.create!(
   latitude: 34.005,
   longitude: -118.8091667,
   host_id: User.find_by(username: "Ironman").id,
-  image: "https://vignette.wikia.nocookie.net/ironman/images/6/62/Photo%28128%29.jpg/revision/latest?cb=20130530125452"
+  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest?cb=20131127033251"
 )

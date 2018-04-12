@@ -13,7 +13,8 @@ class Api::ListingsController < ApplicationController
   end
 
   def show
-    @listing = Listing.find(params[:id])
+    @listing = Listing.includes(:host).find(params[:id])
+
     if @listing
       render 'api/listings/show'
     else

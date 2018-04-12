@@ -4,6 +4,7 @@ class Api::UsersController < ApplicationController
     @users = User.all
     render 'api/users/index'
   end
+  
   def create
     @user = User.new(user_params)
 

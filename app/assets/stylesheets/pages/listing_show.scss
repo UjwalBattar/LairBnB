@@ -17,6 +17,7 @@
 }
 
 .listing-show-container {
+  padding-top: 30px;
   display: inline-block;
   color: $dark-grey;
   margin: 0 50px 0 150px;
@@ -30,7 +31,7 @@
   font-weight: 900;
   font-size: 36px;
   color: $dark-grey;
-  padding-left: 10px;
+  // padding-left: 5px;
 }
 
 .listing-show-city-state {
@@ -38,23 +39,49 @@
 }
 .listing-show-attributes {
   display: inline-flex;
-  padding: 5px 0;
+  padding: 5px 0 25px 0;
 }
 .show-attribute {
   padding-right: 20px;
   font-weight: lighter;
 }
-.listing-show-description {
+
+.listing-show-host-container {
+  display: inline-flex;
+
   border-top: 1px solid $light-grey;
+  color: $dark-grey;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  border-bottom: 1px solid $light-grey;
+}
+.listing-show-host-profile-pic {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  // width: auto;
+  // height: auto;
+}
+.listing-show-host-username {
+  padding: 15px 0 0 25px;
+}
+.listing-show-description {
   height: 300px;
+  max-height: 500px;
   max-width: 900px;
   margin-top: 10px;
   color: $dark-grey;
+  text-overflow: ellipsis;
+  // white-space: nowrap;
+  overflow: hidden;
+  padding: 15px 0 10px 0;
+  border-bottom: 1px solid $light-grey;
 }
 
 .listing-map-container {
   max-width: 900px;
-  margin-top: 10px;
+  margin-top: 50px;
   border: 1px solid black;
   height: 400px;
 }

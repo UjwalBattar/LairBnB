@@ -1,0 +1,25 @@
+.listing-item-container {
+  max-height: 350px;
+  max-width: 350px;
+  padding: 8px;
+  transition: max-width 0.3s ease-out;
+}
+
+.listing-preview-title {
+  padding-top: 2px;
+  padding-right: 2px;
+  color: $dark-grey;
+  font-size: 22px;
+  font-family: $sans-serif;
+  font-weight: bolder;
+}
+
+.listing-preview-price {
+  color: $dark-grey;
+  font-family: $sans-serif;
+}
+
+.listing-preview-city-state {
+  color: $dark-grey;
+  font-family: $sans-serif;
+}

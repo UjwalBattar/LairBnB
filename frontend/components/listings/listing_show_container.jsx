@@ -4,7 +4,7 @@ import React from "react";
 import ListingShow from "./listing_show";
 import { fetchSingleListing } from "../../actions/listing_actions";
 
-const mapStateToProps = ({ entities }, ownProps) => {
+const mapStateToProps = ({ entities, users }, ownProps) => {
   return {
     listing: entities.listings[ownProps.match.params.listingId]
   };
@@ -12,7 +12,7 @@ const mapStateToProps = ({ entities }, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchSingleListing: id => dispatch(fetchSingleListing(id))
+    fetchSingleListing: listingId => dispatch(fetchSingleListing(listingId))
   };
 };
 

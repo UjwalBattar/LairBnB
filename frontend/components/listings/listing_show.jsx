@@ -13,19 +13,22 @@ class ListingShow extends React.Component {
   }
 
   render() {
-    if (!this.props.listing) return null;
-
+    if (!this.props.listing || !this.props.listing.host) return null;
     const {
       title,
+      image,
       city,
       state,
       category,
+      price,
       description,
-      image,
+      amenities,
+      rules,
       guests,
       beds,
       baths,
-      bedrooms
+      bedrooms,
+      host
     } = this.props.listing;
 
     return (
@@ -52,8 +55,15 @@ class ListingShow extends React.Component {
               {baths}&nbsp;baths
             </li>
           </ul>
-          <br />
+          <section className="listing-show-host-container">
+            <img className="listing-show-host-profile-pic" src={host.image} />
+
+            <p className="listing-show-host-username">
+              Hosted &nbsp;by &nbsp;{host.username}
+            </p>
+          </section>
           <p className="listing-show-description">{description}</p>
+
           <div className="listing-map-container">
             <ListingMapContainer
               listing={this.props.listing}

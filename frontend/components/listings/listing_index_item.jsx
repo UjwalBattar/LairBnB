@@ -7,15 +7,7 @@ class ListingIndexItem extends React.Component {
   }
 
   render() {
-    const {
-      id,
-      title,
-      city,
-      state,
-      category,
-      description,
-      image
-    } = this.props.listing;
+    const { id, title, city, state, image, price } = this.props.listing;
     return (
       <div className="listing-item-container">
         <Link className="listing-item" to={`/listings/${id}`}>
@@ -24,10 +16,13 @@ class ListingIndexItem extends React.Component {
               <img className="listing-preview-image" src={image} />
             </li>
             <li className="listing-preview-title">{title}</li>
-            <li className="listing-preview-city">{city}</li>
-            <li className="listing-preview-state">{state}</li>
-            <li className="listing-preview-category">{category}</li>
-            <li className="listing-preview-description">{description}</li>
+            <div className="listing-preview-city-state">
+              {city}, &nbsp;{state}
+            </div>
+            <li className="listing-preview-price">
+              From &nbsp;${price} &nbsp;per &nbsp;night
+            </li>
+
             <br />
           </ul>
         </Link>
