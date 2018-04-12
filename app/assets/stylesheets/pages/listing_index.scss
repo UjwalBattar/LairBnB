@@ -1,13 +1,15 @@
 .listing-index-content {
   display: flex;
   flex-wrap: wrap;
-  // width: calc(100% - 520px);
+  max-width: 100%;
+  padding-left: 130px;
 }
 
 .listing-preview-image {
   height: 215px;
   width: 334px;
   border-radius: 3px;
+  object-fit: cover;
 }
 
 .listing-index-header {

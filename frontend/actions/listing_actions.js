@@ -25,5 +25,5 @@ export const fetchSingleListing = id => dispatch =>
 
 export const createListing = listing => dispatch =>
   APIUtil.createListing(listing).then(formListing =>
-    dispatch(createListing(formListing))
+    dispatch(receiveSingleListing(formListing))
   );
