@@ -1,2 +1,5 @@
-<h1>Api::Bookings#index</h1>
-<p>Find me in app/views/api/bookings/index.html.erb</p>
+@bookings.each do |booking|
+  json.set! booking.id do
+    json.partial! 'api/bookings/booking', booking: booking
+  end
+end

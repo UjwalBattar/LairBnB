@@ -1,16 +1,17 @@
 class Api::BookingsController < ApplicationController
   before_action :require
 
-  def new
-    @booking = Booking.new
-  end
+  # def new
+  #   @booking = Booking.new
+  # end
 
   def create
-    listing_bookings = Listing.find(params[:listing_id]).bookings
-    @booking = current_user.bookings.new(booking_params)
+
+    @booking = Booking.new(booking_params)
+    @booking.guest_id = current_user.id
 
     if @booking.save
-      render 'api/bookings/index'
+      render 'api/bookings/show'
     else
       render json: @booking.errors.full_messages, status: 422
     end
@@ -24,9 +25,10 @@ class Api::BookingsController < ApplicationController
   # end
 
   def destroy
-    @booking = Booking.find(paramd[:id])
+    @booking = Booking.find(params[:id])
     if @booking.guest_id == current_user.id
       @booking.destroy
+      render json: ["Booking has been successfully deleted"]
     else
       render json: ["Must be logged in"], status: 422
     end
