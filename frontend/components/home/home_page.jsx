@@ -11,7 +11,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <main>
+      <main className="home-page-container">
         {this.props.currentUser ? null : (
           <div className="home-splash-container">
             <div className="splash-search-container">
@@ -28,3 +28,4 @@ class HomePage extends React.Component {
 export default HomePage;
 
 // <div className="categories-container">CATEGORIES</div>
+<h1 className="splash-text">Up up and away to your next Super adventure!</h1>;

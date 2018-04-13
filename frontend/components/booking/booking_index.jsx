@@ -9,6 +9,8 @@ class BookingIndex extends React.Component {
   }
 
   render() {
+    let pastBookings = [];
+    let futureBookings = [];
     let allBookings = this.props.bookings.map(booking => {
       let listingItem = this.props.listings.filter(
         listing => listing.id === booking.listing_id
@@ -22,14 +24,6 @@ class BookingIndex extends React.Component {
         />
       );
     });
-
-    let pastBookings = allBookings.filter(
-      obj => Date.parse(obj.props.booking.to_date) <= Date.parse(new Date())
-    );
-
-    let futureBookings = allBookings.filter(
-      obj => Date.parse(obj.props.booking.from_date) >= Date.parse(new Date())
-    );
 
     return (
       <div className="booking-index-wrapper">
@@ -45,6 +39,14 @@ class BookingIndex extends React.Component {
 }
 
 export default withRouter(BookingIndex);
+
+// let pastBookings = allBookings.filter(
+//   obj => Date.parse(obj.props.booking.to_date) <= Date.parse(new Date())
+// );
+//
+// let futureBookings = allBookings.filter(
+//   obj => Date.parse(obj.props.booking.from_date) >= Date.parse(new Date())
+// );
 
 // {allBookings}
 // <div className="future-booking-index-container">

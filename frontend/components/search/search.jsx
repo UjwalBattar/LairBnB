@@ -12,7 +12,7 @@ class Search extends React.Component {
       <div className="search-container">
         <input
           className="search-placeholder"
-          placeholder="Search feature under construction"
+          placeholder="Anywhere &middot; Lairs"
         />
       </div>
     );

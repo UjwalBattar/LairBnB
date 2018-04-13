@@ -1,3 +1,7 @@
+.home-page-container {
+  padding-bottom: 75px;
+}
+
 .home-splash-container {
   background-image: url("https://s.aolcdn.com/hss/storage/midas/6a8a1ebcb1514d2f462430590dbe98d8/203601368/wayne-residence-1400.jpg");
   background-size: contain cover no-repeat;
@@ -13,4 +17,17 @@
   left: 45%;
   top: 60%;
   height: 50px;
+}
+
+.splash-text {
+  background: transparent;
+  background-color: transparent;
+  font-family: $sans-serif;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  top: 50px;
+  left: 45px;
+  // height: 300px;
+  // width: 300px;
 }
