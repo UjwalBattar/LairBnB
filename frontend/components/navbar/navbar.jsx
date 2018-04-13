@@ -35,6 +35,9 @@ class Navbar extends React.Component {
 
     const loggedInLinks = (currentUser, logout) => (
       <nav className="logout-links">
+        <Link className="trips-link" to="/bookings">
+          Trips
+        </Link>
         <a className="logout-link" onClick={logout}>
           Log Out
         </a>
@@ -47,12 +50,12 @@ class Navbar extends React.Component {
       <header className="navbar">
         <div className="home-container">
           <h1 className="home-logo-link">
-            <a className="home-link" href="/">
+            <Link className="home-link" to="/">
               <img
                 className="home-logo"
                 src="https://static.trendme.net/temp/thumbs/580-480-3-90/webmaster-BurningletterL_Texts_full_2251_104053.png"
               />
-            </a>
+            </Link>
           </h1>
           <div className="nav-search-container">
             {this.props.currentUser || this.props.location.pathname !== "/" ? (

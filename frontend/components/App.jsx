@@ -1,14 +1,18 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { Route, Redirect, Switch, Link, HashRouter } from "react-router-dom";
+import { AuthRoute, ProtectedRoute } from "../util/route_api_util";
 
 import Modal from "./modal/modal";
 import NavbarContainer from "./navbar/navbar_container";
 import HomePageContainer from "./home/home_page_container";
 import ListingIndexContainer from "./listings/listing_index_container";
-import { AuthRoute, ProtectedRoute } from "../util/route_api_util";
 import ListingShowContainer from "./listings/listing_show_container";
+import BookingIndexContainer from "./booking/booking_index_container";
+
 import NotFound from "./not_found";
+
+import "react-dates/initialize";
 
 const App = () => (
   <div>
@@ -23,6 +27,7 @@ const App = () => (
         path="/listings/:listingId"
         component={ListingShowContainer}
       />
+      <Route path="/bookings" component={BookingIndexContainer} />
       <Route path="/listings" component={ListingIndexContainer} />
       <Route path="/*" component={NotFound} />
     </Switch>

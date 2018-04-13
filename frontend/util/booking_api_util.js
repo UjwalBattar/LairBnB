@@ -7,13 +7,13 @@ export const fetchAllBookings = data =>
 
 export const fetchSingleBooking = id =>
   $.ajax({
-    method: `/api/bookings/${id}`
+    method: `api/bookings/${id}`
   });
 
 export const createBooking = booking =>
   $.ajax({
     method: "POST",
-    url: "/api/bookings",
+    url: "api/bookings",
     data: { booking }
   });
 

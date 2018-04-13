@@ -1,4 +1,25 @@
 .booking-form-container {
   background: $sharks-teal;
   height: 100%;
+  width: 375px;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+.booking-form {
+  width: 100%;
+
+  background-color: white;
+  padding: 0 40px 0 40px;
+}
+
+.booking-submit {
+  border-radius: 2px;
+  background-color: $salmon-pink;
+  width: 97%;
+  text-align: center;
+  color: $white;
+  font-family: $sans-serif;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
 }

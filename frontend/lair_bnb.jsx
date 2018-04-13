@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from "./store/store";
 import { fetchAllListings } from "./actions/listing_actions";
+import { createBooking } from "./actions/booking_actions";
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   window.fetchAllListings = fetchAllListings;
+  window.createBooking = createBooking;
 
   // TESTING END
 

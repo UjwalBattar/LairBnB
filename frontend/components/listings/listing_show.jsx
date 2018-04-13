@@ -8,7 +8,7 @@ class ListingShow extends React.Component {
   constructor(props) {
     super(props);
   }
-  componentDidMount() {
+  componentWillMount() {
     this.props.fetchSingleListing(this.props.match.params.listingId);
   }
 
@@ -72,7 +72,7 @@ class ListingShow extends React.Component {
           </div>
         </div>
         <aside className="listing-show-booking-form">
-          <BookingFormContainer />
+          <BookingFormContainer listing={this.props.listing} />
         </aside>
       </div>
     );

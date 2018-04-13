@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  validates :listing_id, :guest_id, :from_date, :to_date, presence: true
+  validates :listing_id, :guest_id, :guests, :from_date, :to_date, presence: true
 
   validate :start_must_come_before_end
   validate :does_not_overlap_booking
