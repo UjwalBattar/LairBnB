@@ -13,7 +13,6 @@ class BookingForm extends React.Component {
       focusedInput: null,
       guests: 1
     };
-    // debugger;
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -47,8 +46,9 @@ class BookingForm extends React.Component {
           to_date: this.state.endDate._d,
           guests: this.state.guests
         };
-        this.props.createBooking(booking);
-        // .then(this.props.history.push("/"))
+        this.props
+          .createBooking(booking)
+          .then(this.props.history.push("/bookings"));
       }
     } else {
       this.props.openModal("login");

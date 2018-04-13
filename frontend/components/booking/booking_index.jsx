@@ -9,11 +9,7 @@ class BookingIndex extends React.Component {
   }
 
   render() {
-    // debugger;
-
     let allBookings = this.props.bookings.map(booking => {
-      // debugger;
-      // if (this.props.listings !== undefined) debugger;
       let listingItem = this.props.listings.filter(
         listing => listing.id === booking.listing_id
       )[0];
@@ -27,11 +23,24 @@ class BookingIndex extends React.Component {
       );
     });
 
+    let pastBookings = allBookings.filter(
+      obj => Date.parse(obj.props.booking.to_date) < Date.parse(new Date())
+    );
+
+    let futureBookings = allBookings.filter(
+      obj => Date.parse(obj.props.booking.from_date) >= Date.parse(new Date())
+    );
+
     return (
       <div className="booking-index-wrapper">
         <h1 className="booking-index-header">Here are all your bookings!</h1>
-        <div className="booking-index-container">
-          <div className="booking-index-content">{allBookings}</div>
+        <div className="future-booking-index-container">
+          Your upcoming bookings!
+          <div className="booking-index-content">{futureBookings}</div>
+        </div>
+        <div className="past-booking-index-container">
+          Your past bookings!
+          <div className="booking-index-content">{pastBookings}</div>
         </div>
       </div>
     );

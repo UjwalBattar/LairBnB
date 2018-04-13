@@ -81,11 +81,3 @@ class ListingMap extends React.Component {
 }
 
 export default withRouter(ListingMap);
-
-// this.props.listing.latitude
-//   ? this.props.listing.latitude
-//   :
-
-// this.props.listing.longitude
-//   ? this.props.listing.longitude
-//   :
