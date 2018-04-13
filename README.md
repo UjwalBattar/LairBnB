@@ -39,6 +39,7 @@ This website was developed in roughly 10 days. Visit back soon for further impro
 
 ### Splash Page
 
+![User Auth](docs/Splash_1.png)
 ![User Auth](docs/Splash_2.png)
 
 * Modal pop up functionality for users to sign up and/or login.
