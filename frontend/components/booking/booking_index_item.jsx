@@ -6,8 +6,11 @@ class BookingIndexItem extends React.Component {
     super(props);
   }
   render() {
+    // debugger;
     const { booking, listing } = this.props;
-    const { id, from_date, to_date } = booking;
+    const { id, from_date, to_date, guests } = booking;
+    const formFromDate = new Date(from_date).toLocaleDateString();
+    const formToDate = new Date(to_date).toLocaleDateString();
     if (!listing) return "...";
     return (
       <div className="booking-index-item-container">
@@ -20,8 +23,12 @@ class BookingIndexItem extends React.Component {
             <div className="booking-preview-city-state">
               {listing.city}, &nbsp;{listing.state}
             </div>
+            <div className="booking-preview-guests">
+              For &nbsp;{guests} &nbsp;{guests === 1 ? "guest" : "guests"}
+            </div>
             <li className="booking-preview-dates">
-              From &nbsp;{from_date} &nbsp;to &nbsp;{to_date}
+              From &nbsp;<span className="booking-date">{formFromDate}</span>
+              &nbsp;to &nbsp;<span className="booking-date">{formToDate}</span>
             </li>
           </ul>
         </Link>

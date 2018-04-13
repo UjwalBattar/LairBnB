@@ -10,6 +10,7 @@ import ListingIndexContainer from "./listings/listing_index_container";
 import ListingShowContainer from "./listings/listing_show_container";
 import BookingIndexContainer from "./booking/booking_index_container";
 
+import FooterBar from "./footer_bar";
 import NotFound from "./not_found";
 
 import "react-dates/initialize";
@@ -31,6 +32,9 @@ const App = () => (
       <Route path="/listings" component={ListingIndexContainer} />
       <Route path="/*" component={NotFound} />
     </Switch>
+    <footer>
+      <FooterBar />
+    </footer>
   </div>
 );
 

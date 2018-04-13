@@ -25,13 +25,18 @@
   "layout/session_form",
   "layout/modal",
   "layout/search_bar",
-  "layout/map";
+  "layout/map",
+  "layout/footer_bar";
 
 // Components
 @import "components/signup_form",
   "components/login_form",
   "components/booking_form",
-  "components/listing_index_item";
+  "components/listing_index_item",
+  "components/booking_index_item";
 
 // Pages
-@import "pages/home_page", "pages/listing_show", "pages/listing_index";
+@import "pages/home_page",
+  "pages/listing_show",
+  "pages/listing_index",
+  "pages/booking_index";

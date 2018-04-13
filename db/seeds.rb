@@ -97,7 +97,7 @@ Listing.create!(
   latitude: 34.005,
   longitude: -118.8091667,
   host_id: User.find_by(username: "Ironman").id,
-  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest?cb=20131127033251"
+  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/1000?cb=20131127033251"
 )
 
 Listing.create!(
@@ -151,7 +151,7 @@ Listing.create!(
   latitude: 34.005,
   longitude: -118.8091667,
   host_id: User.find_by(username: "Ironman").id,
-  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest?cb=20131127033251"
+  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/1000?cb=20131127033251"
 )
 
 Listing.create!(
@@ -204,5 +204,5 @@ Listing.create!(
   latitude: 34.005,
   longitude: -118.8091667,
   host_id: User.find_by(username: "Ironman").id,
-  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest?cb=20131127033251"
+  image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/1000?cb=20131127033251"
 )

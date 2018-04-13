@@ -19,7 +19,6 @@ class HomePage extends React.Component {
             </div>
           </div>
         )}
-        <div className="categories-container">CATEGORIES</div>
         <ListingIndexContainer />
       </main>
     );
@@ -27,3 +26,5 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
+
+// <div className="categories-container">CATEGORIES</div>

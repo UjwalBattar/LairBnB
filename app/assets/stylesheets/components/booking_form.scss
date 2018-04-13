@@ -8,11 +8,25 @@
 
 .booking-form {
   width: 100%;
-
+  font-size: 20px;
+  font-family: $sans-serif;
   background-color: white;
   padding: 0 40px 0 40px;
 }
 
+.booking-guests-dropdown {
+  height: 100px;
+  width: 100%;
+  margin: 20px 0 10px 0;
+}
+
+.booking-form-select-guests {
+  display: block;
+  width: 97%;
+  height: 50px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
 .booking-submit {
   border-radius: 2px;
   background-color: $salmon-pink;

@@ -27,7 +27,7 @@
   position: relative;
   bottom: 23px;
   max-height: 70px;
-  max-width: 75px;
+  max-width: 70px;
 }
 .nav-search-container {
   padding-left: 30px;
@@ -85,6 +85,26 @@
   max-height: 49px;
 }
 .logout-link {
+  padding-right: 7px;
+  padding-left: 7px;
+  // padding-bottom: 25px;
+  &:hover {
+    border-bottom: 2px solid $grey;
+  }
+  margin-right: 30px;
+}
+
+.trips-link {
+  padding-right: 7px;
+  padding-left: 7px;
+  // padding-bottom: 25px;
+  &:hover {
+    border-bottom: 2px solid $grey;
+  }
+  margin-right: 30px;
+}
+
+.listings-link {
   padding-right: 7px;
   padding-left: 7px;
   // padding-bottom: 25px;

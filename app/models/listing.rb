@@ -3,7 +3,7 @@ class Listing < ApplicationRecord
   validates :title, uniqueness: true
   geocoded_by :address
   # reverse_geocoded_by :latitude, :longitude
-  before_validation :geocode
+  before_validation :geocode, if: ->(obj){ obj.address.present? and obj.address_changed? }
   # , :reverse_geocode
   attr_reader :address
 

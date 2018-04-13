@@ -24,7 +24,7 @@ class BookingIndex extends React.Component {
     });
 
     let pastBookings = allBookings.filter(
-      obj => Date.parse(obj.props.booking.to_date) < Date.parse(new Date())
+      obj => Date.parse(obj.props.booking.to_date) <= Date.parse(new Date())
     );
 
     let futureBookings = allBookings.filter(
@@ -34,13 +34,10 @@ class BookingIndex extends React.Component {
     return (
       <div className="booking-index-wrapper">
         <h1 className="booking-index-header">Here are all your bookings!</h1>
-        <div className="future-booking-index-container">
-          Your upcoming bookings!
+        <div className="all-booking-index-container">
+          {allBookings}
+
           <div className="booking-index-content">{futureBookings}</div>
-        </div>
-        <div className="past-booking-index-container">
-          Your past bookings!
-          <div className="booking-index-content">{pastBookings}</div>
         </div>
       </div>
     );
@@ -48,3 +45,13 @@ class BookingIndex extends React.Component {
 }
 
 export default withRouter(BookingIndex);
+
+// {allBookings}
+// <div className="future-booking-index-container">
+//   Your upcoming bookings!
+//   <div className="booking-index-content">{futureBookings}</div>
+// </div>
+// <div className="past-booking-index-container">
+//   Your past bookings!
+//   <div className="booking-index-content">{pastBookings}</div>
+// </div>

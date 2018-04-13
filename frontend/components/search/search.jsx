@@ -8,7 +8,6 @@ class Search extends React.Component {
     super(props);
   }
   render() {
-    // logic to change classname based on where it is being rendered
     return (
       <div className="search-container">
         <input

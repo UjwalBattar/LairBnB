@@ -8,9 +8,11 @@ export const receiveAllListings = listings => ({
   listings
 });
 
-export const receiveSingleListing = listing => ({
+export const receiveSingleListing = ({ listing, host, reviews }) => ({
   type: RECEIVE_SINGLE_LISTING,
-  listing
+  listing,
+  host,
+  reviews
 });
 
 export const fetchAllListings = data => dispatch =>

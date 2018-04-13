@@ -1,0 +1,30 @@
+.booking-index-item-container {
+  width: 80%;
+  margin: 0 10% 0 10%;
+  padding: 50px 0 15px 0;
+  border-bottom: 1px solid $light-grey;
+  font-family: $sans-serif;
+}
+.booking-preview-title {
+  font-weight: bold;
+  font-size: 30px;
+  height: 35px;
+}
+
+.booking-preview-dates {
+  padding-top: 10px;
+  height: 15px;
+}
+.booking-date {
+  font-size: 20px;
+}
+.booking-delete-link {
+  background-color: $lighter-grey;
+  border: 1px solid $grey;
+  font-size: 12px;
+  padding: 3px 4px 3px 4px;
+  border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -35,15 +35,18 @@ class Navbar extends React.Component {
 
     const loggedInLinks = (currentUser, logout) => (
       <nav className="logout-links">
+        <Link className="listings-link" to="/listings">
+          Lairs
+        </Link>
         <Link className="trips-link" to="/bookings">
           Trips
         </Link>
         <a className="logout-link" onClick={logout}>
           Log Out
         </a>
-        <a className="profile-pic-container">
+        <span className="profile-pic-container">
           <img className="profile-pic" src={currentUser.image} />
-        </a>
+        </span>
       </nav>
     );
     return (
