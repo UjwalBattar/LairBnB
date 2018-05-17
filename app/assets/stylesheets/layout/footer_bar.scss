@@ -3,19 +3,20 @@
 }
 
 .footer-container {
-  background-color: $sharks-teal;
+  border-top: 1px solid #e1e1e1;
   width: 100%;
   height: 30px;
   padding-bottom: 10px;
   opacity: 1;
-  position: fixed;
+  // position: fixed;
   bottom: 0px;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
-  padding: 7px 15px 3px 15px;
+  padding: 16px 15px 3px 15px;
+  font-size: 20px;
 }
 
 .footer-home-link {
@@ -24,5 +25,7 @@
 
 .linkedin {
   padding-right: 30px;
-  font-size: 20px;
+  font-size: 36px;
+  position: relative;
+  bottom: 5px
 }

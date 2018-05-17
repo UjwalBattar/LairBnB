@@ -22,7 +22,7 @@ class FooterBar extends React.Component {
               className="linkedin"
               href="https://www.linkedin.com/in/ujwal-battar/"
             >
-              <i class="fab fa-linkedin" />
+              <i className="fab fa-linkedin" />
             </a>
           </div>
         </div>
