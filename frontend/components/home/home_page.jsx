@@ -13,9 +13,13 @@ class HomePage extends React.Component {
     return (
       <main className="home-page-container">
         {this.props.currentUser ? null : (
-          <div className="home-splash-container">
-            <div className="splash-search-container">
-              <SearchContainer />
+          <div>
+            <div className="home-splash-container">
+              <h1 className="splash-text">Book unique lairs and have super experiences all over the world!
+              <div className="splash-search-container">
+                <SearchContainer />
+              </div>
+              </h1>
             </div>
           </div>
         )}
@@ -28,4 +32,3 @@ class HomePage extends React.Component {
 export default HomePage;
 
 // <div className="categories-container">CATEGORIES</div>
-<h1 className="splash-text">Up up and away to your next Super adventure!</h1>;

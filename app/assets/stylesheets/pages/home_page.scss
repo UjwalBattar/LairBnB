@@ -9,25 +9,31 @@
   width: 100vw;
   height: 718px;
   align-items: center;
+  // position: relative;
+  // bottom: 60px;
+
 }
 
 .splash-search-container {
   display: inline-block;
   position: relative;
+  font-size: 24px;
   left: 45%;
   top: 60%;
   height: 50px;
 }
 
 .splash-text {
+  z-index: 2;
   background: transparent;
   background-color: transparent;
   font-family: $sans-serif;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 36px;
   color: white;
   position: relative;
-  top: 50px;
-  left: 45px;
+  top: 56%;
+  left: 3%;
   // height: 300px;
   // width: 300px;
 }
