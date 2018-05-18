@@ -1,0 +1,2 @@
+module Api::ListingsSearchHelper
+end

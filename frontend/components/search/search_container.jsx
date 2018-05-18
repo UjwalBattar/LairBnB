@@ -1,14 +1,25 @@
 import { connect } from "react-redux";
-import { updateFilter } from "../../actions/filter_actions";
+import { fetchSearchResults } from "../../actions/search_actions";
 
-import Search from "./search";
+import SearchComponent from "./search";
+// import { updateFilter } from "../../actions/filter_actions";
 
 const mapStateToProps = state => ({
-  listings: state.entities.listings
+  listings: state.entities.searchResults
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
+  fetchSearchResults: query => dispatch(fetchSearchResults(query))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+export default connect(mapStateToProps, mapDispatchToProps)(SearchComponent);
+
+// const mapStateToProps = state => ({
+//   listings: state.entities.listings
+// });
+//
+// const mapDispatchToProps = dispatch => ({
+//   updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
+// });
+//
+// export default connect(mapStateToProps, mapDispatchToProps)(Search);

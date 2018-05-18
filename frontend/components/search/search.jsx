@@ -3,7 +3,7 @@ import React from "react";
 import ListingMap from "../map/map";
 import ListingIndex from "../listings/listing_index";
 
-class Search extends React.Component {
+class SearchComponent extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -18,4 +18,4 @@ class Search extends React.Component {
     );
   }
 }
-export default Search;
+export default SearchComponent;

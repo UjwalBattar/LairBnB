@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :users, only: %i[create show index]
     resource :session, only: %i[create destroy]
     resources :listings, only: %i[create show index]
+    resources :listings_search, only: [:index]
     resources :bookings, only: %i[create show index destroy]
   end
 

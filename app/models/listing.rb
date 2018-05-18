@@ -24,6 +24,18 @@ class Listing < ApplicationRecord
       .where("lng < ?", bounds[:northEast][:lng])
   end
 
+  def self.search_listings(query)
+    query = "%" + quesy.to_s.downcase + "%"
+    search_result = Listing.where('
+      lower(title) LIKE ? or
+      lower(category) LIKE ? or
+      lower(state) LIKE ? or
+      lower(city) LIKE ?',
+      query, query, query, query
+    )
+
+  end
+
 end
 
 # Listing.create(title: "AA", category: "Good", description: "school", street_address: "825 Battery", city: "San Francisco", state: "CA", country: "US")
