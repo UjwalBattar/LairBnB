@@ -6,6 +6,7 @@ import { fetchAllListings } from "../../actions/listing_actions";
 const mapStateToProps = ({ entities, session }) => {
   return {
     listings: entities.listings,
+    searchResults: entities.searchResults,
     currentUser: session.currentUser
   };
 };

@@ -1,5 +1,8 @@
 import { connect } from "react-redux";
-import { fetchSearchResults } from "../../actions/search_actions";
+import {
+  fetchSearchResults,
+  clearSearchResults
+} from "../../actions/search_actions";
 
 import SearchComponent from "./search";
 // import { updateFilter } from "../../actions/filter_actions";
@@ -9,7 +12,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchSearchResults: query => dispatch(fetchSearchResults(query))
+  fetchSearchResults: query => dispatch(fetchSearchResults(query)),
+  clearSearchResults: () => dispatch(clearSearchResults())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchComponent);

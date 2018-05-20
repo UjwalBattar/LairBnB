@@ -26,7 +26,8 @@ class SearchComponent extends React.Component {
   handleSearch(e) {
     e.preventDefault();
     this.props.fetchSearchResults(this.state.searchQuery);
-    // this.setState({ searchQuery: "" });
+    this.props.clearSearchResults();
+    this.setState({ searchQuery: "" });
   }
 
   clearSearch() {
@@ -52,8 +53,8 @@ class SearchComponent extends React.Component {
             value={this.state.searchQuery}
             onChange={this.update("searchQuery")}
           />
-          {close}
         </form>
+        {close}
       </div>
     );
   }

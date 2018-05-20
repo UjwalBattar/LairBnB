@@ -17,10 +17,8 @@ class ListingIndex extends React.Component {
 
   render() {
     let { listings } = this.props;
-    if (listings === undefined) {
-      this.props.fetchAllListings();
-    }
-    // debugger;
+
+    debugger;
     let allListings = Object.values(listings).map(listing => {
       return <ListingIndexItem listing={listing} key={listing.id} />;
     });
