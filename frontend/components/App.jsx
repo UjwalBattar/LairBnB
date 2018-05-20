@@ -9,6 +9,7 @@ import HomePageContainer from "./home/home_page_container";
 import ListingIndexContainer from "./listings/listing_index_container";
 import ListingShowContainer from "./listings/listing_show_container";
 import BookingIndexContainer from "./booking/booking_index_container";
+import SearchContainer from "./search/search_container";
 
 import FooterBar from "./footer_bar";
 import NotFound from "./not_found";
@@ -30,6 +31,7 @@ const App = () => (
       />
       <Route path="/bookings" component={BookingIndexContainer} />
       <Route path="/listings" component={ListingIndexContainer} />
+      // <Route path="/listings/?search=:query" component={SearchContainer} />
       <Route path="/*" component={NotFound} />
     </Switch>
     <footer>

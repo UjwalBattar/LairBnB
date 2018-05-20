@@ -1,7 +1,9 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import ListingMap from "../map/map";
 import ListingIndex from "../listings/listing_index";
+import ListingIndexContainer from "../listings/listing_index_container";
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -12,27 +14,48 @@ class SearchComponent extends React.Component {
 
     this.update = this.update.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.clearSearch = this.clearSearch.bind(this);
   }
 
   update(property) {
     return e => {
-      this.setState({ [property]: e.target.value }, this.handleSearch);
+      this.setState({ [property]: e.target.value });
     };
   }
 
-  handleSearch() {
+  handleSearch(e) {
+    e.preventDefault();
     this.props.fetchSearchResults(this.state.searchQuery);
+    // this.setState({ searchQuery: "" });
+  }
+
+  clearSearch() {
+    this.setState({ searchQuery: "" });
   }
 
   render() {
+    let close;
+    if (this.state.searchQuery.length > 0) {
+      close = (
+        <div className="closer" onClick={this.clearSearch}>
+          x
+        </div>
+      );
+    }
+
     return (
       <div className="search-container">
-        <input
-          className="search-placeholder"
-          placeholder="Anywhere &middot; Lairs"
-        />
+        <form onSubmit={this.handleSearch}>
+          <input
+            className="search-bar"
+            placeholder="Anywhere &middot; Lairs"
+            value={this.state.searchQuery}
+            onChange={this.update("searchQuery")}
+          />
+          {close}
+        </form>
       </div>
     );
   }
 }
-export default SearchComponent;
+export default withRouter(SearchComponent);

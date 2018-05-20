@@ -30,8 +30,9 @@ class Listing < ApplicationRecord
       lower(title) LIKE ? or
       lower(category) LIKE ? or
       lower(state) LIKE ? or
-      lower(city) LIKE ?',
-      query, query, query, query
+      lower(city) LIKE ? or
+      lower(host_name) LIKE ?',
+      query, query, query, query, query
     )
 
   end

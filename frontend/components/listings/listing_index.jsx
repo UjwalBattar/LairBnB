@@ -6,7 +6,9 @@ import ListingMapContainer from "../map/map_container";
 class ListingIndex extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    // this.state = {
+    //   listings: this.props.listings
+    // };
   }
 
   componentDidMount() {
@@ -14,7 +16,11 @@ class ListingIndex extends React.Component {
   }
 
   render() {
-    const { listings } = this.props;
+    let { listings } = this.props;
+    if (listings === undefined) {
+      this.props.fetchAllListings();
+    }
+    // debugger;
     let allListings = Object.values(listings).map(listing => {
       return <ListingIndexItem listing={listing} key={listing.id} />;
     });

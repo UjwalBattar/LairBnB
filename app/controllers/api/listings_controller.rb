@@ -25,7 +25,7 @@ class Api::ListingsController < ApplicationController
   private
 
   def listing_params
-    params.require(:listing).permit(:title, :state, :category, :description, :is_booked?, :latitude, :longitude, :image)
+    params.require(:listing).permit(:title, :state, :category, :description, :is_booked?, :latitude, :longitude, :image, :host)
   end
 
   def bounds
