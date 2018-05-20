@@ -61,6 +61,7 @@ Listing.create!(
   price: 450,
   latitude: 35.4515073,
   longitude: -82.2870588,
+  host_name: "Batman",
   host_id: User.find_by(username: "Batman").id,
   image: "http://media1.break.com/dnet/media/2011/12/22/d36b5d85-fc45-421d-894f-fbe80ad71b5d_thumb.jpeg"
 )
@@ -79,6 +80,7 @@ Listing.create!(
   price: 250,
   latitude: 80.076625,
   longitude: 21.038904,
+  host_name: "Superman",
   host_id: User.find_by(username: "Superman").id,
   image: "http://www.geekkafe.com/wp-content/uploads/2018/03/Supermans-Fortress-of-Solitude.jpg"
 )
@@ -96,6 +98,7 @@ Listing.create!(
   price: 650,
   latitude: 34.005,
   longitude: -118.8091667,
+  host_name: "Ironman",
   host_id: User.find_by(username: "Ironman").id,
   image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/1000?cb=20131127033251"
 )
@@ -114,6 +117,7 @@ Listing.create!(
   price: 450,
   latitude: 35.4515073,
   longitude: -82.2870588,
+  host_name: "Batman",
   host_id: User.find_by(username: "Batman").id,
   image: "http://media1.break.com/dnet/media/2011/12/22/d36b5d85-fc45-421d-894f-fbe80ad71b5d_thumb.jpeg"
 )
@@ -132,6 +136,7 @@ Listing.create!(
   price: 250,
   latitude: 80.076625,
   longitude: 21.038904,
+  host_name: "Superman",
   host_id: User.find_by(username: "Superman").id,
   image: "http://www.geekkafe.com/wp-content/uploads/2018/03/Supermans-Fortress-of-Solitude.jpg"
 )
@@ -150,6 +155,7 @@ Listing.create!(
   price: 650,
   latitude: 34.005,
   longitude: -118.8091667,
+  host_name: "Ironman",
   host_id: User.find_by(username: "Ironman").id,
   image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/1000?cb=20131127033251"
 )
@@ -168,6 +174,7 @@ Listing.create!(
   price: 450,
   latitude: 35.4515073,
   longitude: -82.2870588,
+  host_name: "Batman",
   host_id: User.find_by(username: "Batman").id,
   image: "http://media1.break.com/dnet/media/2011/12/22/d36b5d85-fc45-421d-894f-fbe80ad71b5d_thumb.jpeg"
 )
@@ -186,6 +193,7 @@ Listing.create!(
   price: 250,
   latitude: 80.076625,
   longitude: 21.038904,
+  host_name: "Superman",
   host_id: User.find_by(username: "Superman").id,
   image: "http://www.geekkafe.com/wp-content/uploads/2018/03/Supermans-Fortress-of-Solitude.jpg"
 )
@@ -203,6 +211,7 @@ Listing.create!(
   price: 650,
   latitude: 34.005,
   longitude: -118.8091667,
+  host_name: "Ironman",
   host_id: User.find_by(username: "Ironman").id,
   image: "https://vignette.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/1000?cb=20131127033251"
 )

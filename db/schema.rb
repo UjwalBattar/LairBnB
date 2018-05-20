@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180412173208) do
+ActiveRecord::Schema.define(version: 20180520051757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,7 +50,9 @@ ActiveRecord::Schema.define(version: 20180412173208) do
     t.integer "baths"
     t.string "street_address"
     t.string "address"
+    t.string "host_name", null: false
     t.index ["category"], name: "index_listings_on_category"
+    t.index ["city"], name: "index_listings_on_city"
     t.index ["state"], name: "index_listings_on_state"
     t.index ["title"], name: "index_listings_on_title", unique: true
   end

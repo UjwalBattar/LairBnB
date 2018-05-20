@@ -25,7 +25,7 @@ class Listing < ApplicationRecord
   end
 
   def self.search_listings(query)
-    query = "%" + quesy.to_s.downcase + "%"
+    query = "%" + query.to_s.downcase + "%"
     search_result = Listing.where('
       lower(title) LIKE ? or
       lower(category) LIKE ? or

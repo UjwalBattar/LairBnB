@@ -4,6 +4,11 @@ import ListingIndexItem from "./listing_index_item";
 import ListingMapContainer from "../map/map_container";
 
 class ListingIndex extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   componentDidMount() {
     this.props.fetchAllListings();
   }
