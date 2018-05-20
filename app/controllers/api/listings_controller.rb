@@ -9,13 +9,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def index
-    search_query = search_params[:query]
-    if search_query.length < 2
       @listings = (bounds ? Listing.in_bounds(bounds) : Listing.all)
-    else
-      @listings = Listing.search_listings(search_query)
-    end
-    
   end
 
   def show
