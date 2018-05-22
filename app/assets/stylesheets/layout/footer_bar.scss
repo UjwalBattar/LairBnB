@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 15px 3px 15px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer-home-link {
@@ -25,7 +25,14 @@
 
 .linkedin {
   padding-right: 30px;
-  font-size: 36px;
+  font-size: 34px;
   position: relative;
-  bottom: 5px
+  bottom: 5px;
+}
+
+.github {
+  padding-right: 30px;
+  font-size: 34px;
+  position: relative;
+  bottom: 5px;
 }

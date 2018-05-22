@@ -385,25 +385,6 @@ Listing.create!(
 
 Listing.create!(
 
-  title: "Fantastic Four HQ, Baxter Building",
-  category: "Good",
-  description: "Fantastic Four HQ, Baxter Building Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  state: "New York",
-  city: "New York",
-  beds: (rand(10) + 1),
-  baths: (rand(10) + 1),
-  guests: (rand(30) + 1),
-  bedrooms: (rand(20) + 1),
-  price: (rand(1000) + 1),
-  latitude: 40.758896,
-  longitude: -73.985130,
-  host_name: "Invisible Woman",
-  host_id: User.find_by(username: "Invisible Woman").id,
-  image: "https://vignette.wikia.nocookie.net/fantasticfourmovies/images/e/e5/Baxter_Building_2015.png/revision/latest/scale-to-width-down/640?cb=20150419200247"
-)
-
-Listing.create!(
-
   title: "Wolverine's Solace",
   category: "Good",
   description: "Wolverine's Solace Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -419,4 +400,23 @@ Listing.create!(
   host_name: "Wolverine",
   host_id: User.find_by(username: "Wolverine").id,
   image: "http://whistlerwired.com/wp-content/uploads/accommodation/626/full-size/1-Wolf-Exterior.jpg"
+)
+
+Listing.create!(
+
+  title: "Fantastic Four HQ, Baxter Building",
+  category: "Good",
+  description: "Fantastic Four HQ, Baxter Building Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  state: "New York",
+  city: "New York",
+  beds: (rand(10) + 1),
+  baths: (rand(10) + 1),
+  guests: (rand(30) + 1),
+  bedrooms: (rand(20) + 1),
+  price: (rand(1000) + 1),
+  latitude: 40.758896,
+  longitude: -73.985130,
+  host_name: "Invisible Woman",
+  host_id: User.find_by(username: "Invisible Woman").id,
+  image: "https://vignette.wikia.nocookie.net/fantasticfourmovies/images/e/e5/Baxter_Building_2015.png/revision/latest/scale-to-width-down/640?cb=20150419200247"
 )

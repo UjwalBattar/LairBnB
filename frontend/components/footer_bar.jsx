@@ -18,6 +18,9 @@ class FooterBar extends React.Component {
             <Link to="/listings">Lairs</Link>
           </div>
           <div className="my-links">
+            <a className="github" href="https://github.com/UjwalBattar">
+              <i class="fab fa-github" />
+            </a>
             <a
               className="linkedin"
               href="https://www.linkedin.com/in/ujwal-battar/"
