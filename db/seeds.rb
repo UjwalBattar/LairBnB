@@ -156,6 +156,26 @@ User.create!(
 
 )
 
+User.create!(
+  first_name: "Matthew",
+  last_name: "Murdock",
+  username: "Daredevil",
+  password: "password",
+  email: "daredevil@mail.com",
+  image: "https://pmcvariety.files.wordpress.com/2013/06/daredevil-red-costume.jpg?w=1000&h=562&crop=1"
+
+)
+
+User.create!(
+  first_name: "Bruce",
+  last_name: "Banner",
+  username: "Hulk",
+  password: "password",
+  email: "hulk@mail.com",
+  image: "https://qph.fs.quoracdn.net/main-qimg-768b4acc5d5e9082624cad9072d6bdd2-c"
+
+)
+
 Listing.create!(
 
   title: "Wayne Manor",
@@ -404,6 +424,44 @@ Listing.create!(
 
 Listing.create!(
 
+  title: "Daredevin in SF",
+  category: "Good",
+  description: "Daredevil's SF House Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  state: "California",
+  city: "San Francisco",
+  beds: (rand(10) + 1),
+  baths: (rand(10) + 1),
+  guests: (rand(30) + 1),
+  bedrooms: (rand(20) + 1),
+  price: (rand(1000) + 1),
+  latitude: 37.7930000,
+  longitude: -122.4161000,
+  host_name: "Daredevil",
+  host_id: User.find_by(username: "Daredevil").id,
+  image: "https://medias.spotern.com/spots/w1280/2271.jpg"
+)
+
+Listing.create!(
+
+  title: "Hulk Home",
+  category: "Good",
+  description: "Hulk's House in Dayton Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  state: "Ohio",
+  city: "Dayton",
+  beds: (rand(10) + 1),
+  baths: (rand(10) + 1),
+  guests: (rand(30) + 1),
+  bedrooms: (rand(20) + 1),
+  price: (rand(1000) + 1),
+  latitude: 39.7589000,
+  longitude: -84.1916000,
+  host_name: "Hulk",
+  host_id: User.find_by(username: "Hulk").id,
+  image: "http://www.thestudiotour.com/movies/hulk2003/1.jpg"
+)
+
+Listing.create!(
+
   title: "Fantastic Four HQ, Baxter Building",
   category: "Good",
   description: "Fantastic Four HQ, Baxter Building Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -418,5 +476,5 @@ Listing.create!(
   longitude: -73.985130,
   host_name: "Invisible Woman",
   host_id: User.find_by(username: "Invisible Woman").id,
-  image: "https://vignette.wikia.nocookie.net/fantasticfourmovies/images/e/e5/Baxter_Building_2015.png/revision/latest/scale-to-width-down/640?cb=20150419200247"
+  image: "https://img00.deviantart.net/420c/i/2017/302/b/e/baxter_building___fantastic_4_fanart_by_waldziur-dbs2d1s.jpg"
 )
