@@ -18,6 +18,7 @@
   background-image: url("http://hkn8x2hjvsvfpoet2v8knms0-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/LAIRLOGO.png");
   z-index: 10;
   margin-bottom: 40px;
+  min-width: 50px;
 }
 
 .home-link {
@@ -86,6 +87,7 @@
 }
 .logout-link {
   padding-right: 7px;
+  min-width: 64px;
   padding-left: 7px;
   // padding-bottom: 25px;
   &:hover {
@@ -112,4 +114,11 @@
     border-bottom: 2px solid $grey;
   }
   margin-right: 30px;
+}
+
+@media screen and (max-width: 740px) {
+  .nav-search-container {
+    margin-left: 5px;
+    padding-left: 5px;
+  }
 }

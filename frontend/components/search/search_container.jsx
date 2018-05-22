@@ -8,7 +8,7 @@ import SearchComponent from "./search";
 // import { updateFilter } from "../../actions/filter_actions";
 
 const mapStateToProps = state => ({
-  listings: state.entities.searchResults
+  results: state.entities.searchResults
 });
 
 const mapDispatchToProps = dispatch => ({

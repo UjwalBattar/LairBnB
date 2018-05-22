@@ -2,7 +2,7 @@ export const fetchAllListings = data =>
   $.ajax({
     method: "GET",
     url: "/api/listings",
-    data
+    data: { data }
   });
 
 export const fetchSingleListing = id =>

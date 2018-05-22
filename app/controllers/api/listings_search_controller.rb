@@ -5,7 +5,7 @@ class Api::ListingsSearchController < ApplicationController
     search_query = search_params[:query]
 
     if search_query.length < 2
-      @listings = {}
+      @listings = Listing.all
     else
       @listings = Listing.search_listings(search_query)
     end

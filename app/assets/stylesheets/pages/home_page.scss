@@ -4,14 +4,14 @@
 
 .home-splash-container {
   background-image: url("https://s.aolcdn.com/hss/storage/midas/6a8a1ebcb1514d2f462430590dbe98d8/203601368/wayne-residence-1400.jpg");
-  background-size: contain cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
   height: 718px;
   align-items: center;
   // position: relative;
   // bottom: 60px;
-
 }
 
 .splash-search-container {
