@@ -37,3 +37,5 @@ class About extends React.Component {
     );
   }
 }
+
+export default withRouter(About);
