@@ -24,7 +24,7 @@ class About extends React.Component {
         </p>
         <div className="about-links">
           <a className="about-github" href="https://github.com/UjwalBattar">
-            <i class="fab fa-github" />
+            <i className="fab fa-github" />
           </a>
           <a
             className="about-linkedin"
