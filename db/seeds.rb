@@ -9,7 +9,14 @@
 Listing.delete_all
 User.delete_all
 
-
+User.create!(
+  first_name: "Clark",
+  last_name: "Kent",
+  username: "Superman",
+  password: "password",
+  email: "superman@mail.com",
+  image: "http://www.monologuedb.com/wp-content/uploads/2011/03/SupermanChristopherReeve.jpg"
+)
 User.create!(
   first_name: "Bruce",
   last_name: "Wayne",
