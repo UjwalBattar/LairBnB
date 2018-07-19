@@ -30,8 +30,8 @@ const App = () => (
         component={ListingShowContainer}
       />
       <Route path="/bookings" component={BookingIndexContainer} />
+      <Route path="/listings/?search=:query" component={SearchContainer} />
       <Route path="/listings" component={ListingIndexContainer} />
-      // <Route path="/listings/?search=:query" component={SearchContainer} />
       <Route path="/*" component={NotFound} />
     </Switch>
     <footer>
