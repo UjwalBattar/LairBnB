@@ -6,6 +6,7 @@ import Root from "./components/root";
 import configureStore from "./store/store";
 import { fetchAllListings } from "./actions/listing_actions";
 import { createBooking } from "./actions/booking_actions";
+import { receiveSearchResults } from "./actions/search_actions";
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.dispatch = store.dispatch;
   window.fetchAllListings = fetchAllListings;
   window.createBooking = createBooking;
+  window.receiveSearchResults = receiveSearchResults;
 
   // TESTING END
 

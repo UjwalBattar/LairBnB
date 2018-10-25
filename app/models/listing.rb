@@ -32,9 +32,9 @@ class Listing < ApplicationRecord
       lower(state) LIKE ? or
       lower(city) LIKE ? or
       lower(host_name) LIKE ?',
-      query, query, query, query, query
+        query, query, query, query, query
     )
-
+    search_result
   end
 
 end
