@@ -19,7 +19,7 @@ class FooterBar extends React.Component {
           </div>
           <div className="my-links">
             <a className="github" href="https://github.com/UjwalBattar">
-              <i class="fab fa-github" />
+              <i className="fab fa-github" />
             </a>
             <a
               className="linkedin"
