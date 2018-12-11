@@ -15,7 +15,6 @@ class ListingMap extends React.Component {
     super(props);
   }
 
-  // console.log(this.props);
   componentDidMount() {
     // set the map to show SF
     let centerLatitude = this.props.listing

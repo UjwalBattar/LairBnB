@@ -6,7 +6,6 @@ class BookingIndexItem extends React.Component {
     super(props);
   }
   render() {
-    // debugger;
     const { booking, listing } = this.props;
     const { id, from_date, to_date, guests } = booking;
     const formFromDate = new Date(from_date).toLocaleDateString();

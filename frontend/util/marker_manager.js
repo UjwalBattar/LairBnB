@@ -8,7 +8,6 @@ class MarkerManager {
 
   updateMarkers(listings) {
     const listingsObj = {};
-    // console.log(listings);
     listings.forEach(listing => (listingsObj[listing.id] = listing));
 
     listings

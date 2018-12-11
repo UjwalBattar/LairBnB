@@ -25,9 +25,14 @@ class SearchComponent extends React.Component {
 
   handleSearch(e) {
     e.preventDefault();
-    this.props.fetchSearchResults(this.state.searchQuery);
+    this.props.fetchSearchResults(this.state.searchQuery).then(() => {
+      this.props.history.push({
+        pathname: "/search"
+      });
+    });
     this.props.clearSearchResults();
     this.setState({ searchQuery: "" });
+    // console.log(this.props);
   }
 
   clearSearch() {
