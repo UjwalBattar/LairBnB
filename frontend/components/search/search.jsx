@@ -44,7 +44,7 @@ class SearchComponent extends React.Component {
     if (this.state.searchQuery.length > 0) {
       close = (
         <div className="closer" onClick={this.clearSearch}>
-          x
+          <i className="fas fa-times"></i>
         </div>
       );
     }
@@ -58,8 +58,8 @@ class SearchComponent extends React.Component {
             value={this.state.searchQuery}
             onChange={this.update("searchQuery")}
           />
-        </form>
         {close}
+        </form>
       </div>
     );
   }

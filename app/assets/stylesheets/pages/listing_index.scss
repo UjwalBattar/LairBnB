@@ -16,8 +16,8 @@
 }
 
 .listing-index-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
@@ -25,13 +25,12 @@
 }
 
 .listing-index-map-container {
-  // display: flex;
-  // position: relative;
   position: sticky;
+  padding-top: 3px;
+  padding-right: 35px;
   top: 20px;
   float: right;
   margin-right: 10px;
   height: 800px;
-  width: 500px;
-  border: 1px solid $sharks-teal;
+  width: 545px;
 }

@@ -25,9 +25,9 @@ const App = () => (
 		<Switch>
 			<Route exact path="/" component={HomePageContainer} />
 			<Route exact path="/listings/:listingId" component={ListingShowContainer} />
+			<Route exact path="/listings" component={ListingIndexContainer} />
 			<Route path="/bookings" component={BookingIndexContainer} />
 			<Route path="/search" component={SearchIndexContainer} />
-			<Route path="/lisitngs" component={ListingIndexContainer} />
 			<Route path="/*" component={NotFound} />
 		</Switch>
 		<footer>
