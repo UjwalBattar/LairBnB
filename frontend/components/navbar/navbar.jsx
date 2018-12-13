@@ -15,7 +15,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    console.log(this.props.location.pathname);
     const loggedOutLinks = () => (
       <nav className="login-signup-links">
         <a className="demo-link" onClick={e => this.handleGuestLogin(e)}>
