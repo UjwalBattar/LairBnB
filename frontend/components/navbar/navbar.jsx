@@ -15,6 +15,7 @@ class Navbar extends React.Component {
   }
 
   render() {
+    console.log(this.props.location.pathname);
     const loggedOutLinks = () => (
       <nav className="login-signup-links">
         <a className="demo-link" onClick={e => this.handleGuestLogin(e)}>
@@ -61,7 +62,7 @@ class Navbar extends React.Component {
             </Link>
           </h1>
           <div className="nav-search-container">
-            {this.props.currentUser || this.props.location.pathname !== "/" ? (
+            {(this.props.location.pathname != "/" || this.props.currentUser) ? (
               <SearchContainer />
             ) : null}
           </div>
