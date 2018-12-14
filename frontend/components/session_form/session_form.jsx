@@ -66,7 +66,7 @@ class SessionForm extends React.Component {
             className={`${this.props.formType}-from-box`}
           >
             <p className="login-form-header">
-              {this.props.formType === "login" ? "Log in to continue" : null}
+              {this.props.formType === "login" ? "Log in to continue" : "Sign up to continue"}
             </p>
             <div className="session-errors">{this.renderErrors()}</div>
             <div className="input-fields">
